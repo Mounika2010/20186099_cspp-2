@@ -1,10 +1,10 @@
 import java.util.Scanner;
 /**
- * { item_description }.
+ * Roots of a quadratic equation.
  */
 public final class Solution {
 	/**
-	 * { function_description }
+	 * Quadratic equation.
 	 *
 	 * @param      args  The arguments
 	 */
@@ -16,7 +16,7 @@ public final class Solution {
 		roots(a, b, c);
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      a     { parameter_description }
 	 * @param      b     { parameter_description }
@@ -27,7 +27,7 @@ public final class Solution {
 		double root1 = (-b + Math.sqrt(det)) / (2 * a);
 		double root2 = (-b - Math.sqrt(det)) / (2 * a);
 		System.out.println(root1 + " " + root2);
-		}	
+		}
 	/*
 	Need to write the roots function and print the output.
 	*/
