@@ -1,8 +1,11 @@
 import java.util.Scanner;
 /**
- * { item_description }
+ * { item_description }.
  */
 public final class Solution {
+	private Solution() {
+		//constructor.
+	}
 	/**
 	Do not modify this main function.
 	*/
@@ -28,3 +31,6 @@ public final class Solution {
 		return 1;
 	}
 }
+
+
+
