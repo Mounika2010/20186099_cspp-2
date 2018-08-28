@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * { item_description }
+ */
 public final class Solution {
 	/**
 	 * { function_description }
@@ -10,16 +13,23 @@ public final class Solution {
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 		int c = scan.nextInt();
-		rootsOfQuadraticEquation(a, b, c);
+		roots(a, b, c);
 	}
-	public static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
-		int det = (b * b) - (4 * a * c);
-		double root1 = (-b + Math.sqrt(det))/ (2 * a);
-		double root2 = (-b - Math.sqrt(det))/(2 * a);
+	/**
+	 * { function_description }
+	 *
+	 * @param      a     { parameter_description }
+	 * @param      b     { parameter_description }
+	 * @param      c     { parameter_description }
+	 */
+	public static void roots(final int a, final int b, final int c) {
+		int det = (b * b) - (2 * 2 * a * c);
+		double root1 = (-b + Math.sqrt(det)) / (2 * a);
+		double root2 = (-b - Math.sqrt(det)) / (2 * a);
 		System.out.println(root1 + " " + root2);
 		}	
 	/*
-	Need to write the rootsOfQuadraticEquation function and print the output.
+	Need to write the roots function and print the output.
 	*/
 }
 
