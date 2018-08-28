@@ -2,8 +2,11 @@ import java.util.Scanner;
 /**
  * { item_description }.
  */
+
 public final class Solution {
     /**
+     * Constructs the object.
+     */
     private Solution() {
         //constructor.
     }
@@ -16,7 +19,7 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner s = new Scanner(System.in);  
+        Scanner s = new Scanner(System.in);
         int base = s.nextInt();
         int exponent = s.nextInt();
         long result = power(base, exponent);
