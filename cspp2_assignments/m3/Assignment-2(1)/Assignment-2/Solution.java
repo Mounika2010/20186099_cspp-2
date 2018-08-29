@@ -20,13 +20,14 @@ public class Solution {
        		val = i;
        		while(val != 0) {
         	
-        	if(val % a == b) {
-        		count++;
+        		if(val % a == b) {
+        			count++;
         	}
-      		val = val / a;
+      			val = val / a;
         	}
-        	System.out.println(count);
+        	
        	}
+       	System.out.println(count);
         }
 
     }    
