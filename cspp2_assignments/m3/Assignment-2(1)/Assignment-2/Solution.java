@@ -14,8 +14,8 @@ public class Solution {
         int i = 0;
         int count = 0;
         int val = 1;
-        int a = 7;
-        int b = 10;
+        int a = 10;
+        int b = 7;
        	for(i=0; i<=n; i++) {
        		val = i;
        		while(val != 0) {
