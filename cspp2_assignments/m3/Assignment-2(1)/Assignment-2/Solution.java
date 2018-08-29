@@ -17,6 +17,7 @@ public class Solution {
         int a = 7;
         int b = 10;
        	for(i=0; i<=n; i++) {
+       		val = i;
        		while(val != 0) {
         	
         	if(val % a == b) {
