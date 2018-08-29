@@ -5,6 +5,9 @@ import java.util.Scanner;
 /*
 	Do not modify this main function.
 	*/
+/**
+ * scanner function.
+ */
 public final class Solution {
     /**
      * Constructs the object.
@@ -29,7 +32,7 @@ public final class Solution {
 	Need to write the gcd function and print the output.
 	*/
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      n1    The n 1
      * @param      n2    The n 2
