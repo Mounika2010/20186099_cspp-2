@@ -30,16 +30,15 @@ public final class Solution {
         int val = 1;
         int a = 10;
         int b = 7;
-        for(i = 0; i <= n; i++) {
+        for (i = 0; i <= n; i++) {
             val = i;
             while (val != 0) {
             
-                if(val % a == b) {
+                if (val % a == b) {
                     count++;
             }
                 val = val / a;
             }
-            
         }
         System.out.println(count);
         }
