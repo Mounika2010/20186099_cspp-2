@@ -3,8 +3,8 @@
  */
 import java.util.Scanner;
 /*
-	Do not modify this main function.
-	*/
+    Do not modify this main function.
+    */
 /**
  * scanner function.
  */
@@ -29,8 +29,8 @@ public final class Solution {
         System.out.println(gcd(n1, n2));
     }
     /*
-	Need to write the gcd function and print the output.
-	*/
+    Need to write the gcd function and print the output.
+    */
     /**
      * { function_description }.
      *
