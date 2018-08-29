@@ -23,17 +23,16 @@ public final class Solution {
      */
     public static void main(final String[] args) {
 
-        Scanner s = new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         int i = 0;
         int count = 0;
         int val = 1;
-        int a = 10;
-        int b = 7;
+        final int a = 10;
+        final int b = 7;
         for (i = 0; i <= n; i++) {
             val = i;
             while (val != 0) {
-            
                 if (val % a == b) {
                     count++;
             }
@@ -46,4 +45,6 @@ public final class Solution {
     }
 
 
-  
+
+
+
