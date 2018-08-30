@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public final class Solution { 
+public final class Solution {
     /*
     Fill this main function to print maximum of given array
     */
