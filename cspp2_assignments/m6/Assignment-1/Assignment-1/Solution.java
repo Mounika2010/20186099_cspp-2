@@ -40,7 +40,7 @@ public final class Solution {
     }
     static void oddComposites(final int n) {
 	for(int i=1; i<=n; i++) {
-        if (Prime(4) && Odd(i)) {
+        if (Prime(i) && Odd(i)) {
             System.out.println(i);
         }
 
