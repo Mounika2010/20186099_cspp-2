@@ -30,10 +30,9 @@ public final class Solution {
             }
         }
         return false;
-
     }
     static void oddComposites(final int n) {
-	for(int i=0; i<=n; i++) {
+	for(int i=4; i<=n; i++) {
         if (Prime(i) && Odd(i)) {
             System.out.println(i);
         }
