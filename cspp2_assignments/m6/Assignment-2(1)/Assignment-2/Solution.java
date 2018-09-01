@@ -31,7 +31,13 @@ final class Solution {
             for (int j = 0; j < rows; j++) {
                 int n = a[i][j]/x;
                 int remainder = a[i][j] % x;
+                if (remainder <= y) {
+                    a[i][j] = n * x;
 
+                }
+                else {
+                    a[i][j] = (n+1) * x;
+                }
             }
         }
 	    return a;
