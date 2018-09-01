@@ -17,11 +17,18 @@ public final class Solution {
      *
      * @param      n     n value
      */
+    /**
+     * to check if the number is odd.
+     *
+     * @param      i     element in input
+     *
+     * @return     if even, returns false else returns true.
+     */
     public static boolean Odd(final int i) {
-        if (i%2 == 0) {
-            return false;
+        if (i%2 != 0) {
+            return true;
         }
-        return true;
+        return false;
     }
     public static boolean Prime(final int i) {
         for (int j=2; j<i; j++) {
@@ -49,4 +56,7 @@ public final class Solution {
         oddComposites(n);
     }
 }
+
+
+
 
