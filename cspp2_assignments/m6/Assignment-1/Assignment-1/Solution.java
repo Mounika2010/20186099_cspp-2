@@ -30,7 +30,6 @@ public final class Solution {
         }
         return false;
     }
-    
     /**
      * To check if the element is prime.
      *
@@ -38,7 +37,7 @@ public final class Solution {
      *
      * @return     returns true if the number is composite else returns false.
      */
-    public static boolean Composite(final int i) {
+    public static boolean isComposite(final int i) {
         for (int j = 2; j < i; j++) {
             if (i % j == 0) {
                 return true;
@@ -52,8 +51,8 @@ public final class Solution {
      * @param      n     input num of elements.
      */
     static void oddComposites(final int n) {
-	for(int i = 1; i <= n; i++) {
-        if (Composite(i) && Odd(i)) {
+    for (int i = 1; i <= n; i++) {
+        if (isComposite(i) && Odd(i)) {
             System.out.println(i);
         }
 
