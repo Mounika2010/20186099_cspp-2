@@ -25,7 +25,7 @@ public final class Solution {
      * @return     if even, returns false else returns true.
      */
     public static boolean Odd(final int i) {
-        if (i%2 != 0) {
+        if (i % 2 != 0) {
             return true;
         }
         return false;
@@ -40,12 +40,17 @@ public final class Solution {
      */
     public static boolean Composite(final int i) {
         for (int j = 2; j < i; j++) {
-            if (i%j == 0) {
+            if (i % j == 0) {
                 return true;
             }
         }
         return false;
     }
+    /**
+     * to check for odd composite.
+     *
+     * @param      n     input num of elements.
+     */
     static void oddComposites(final int n) {
 	for(int i = 1; i <= n; i++) {
         if (Composite(i) && Odd(i)) {
