@@ -34,13 +34,13 @@ public final class Solution {
     /**
      * To check if the element is prime.
      *
-     * @param      i     element in input
+     * @param      i     element in input.
      *
      * @return     returns true if the number is composite else returns false.
      */
     public static boolean Composite(final int i) {
         for (int j = 2; j < i; j++) {
-            if (i%j != 0) {
+            if (i%j == 0) {
                 return true;
             }
         }
