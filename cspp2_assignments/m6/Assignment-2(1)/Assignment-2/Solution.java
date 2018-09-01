@@ -34,7 +34,6 @@ final class Solution {
                 int remainder = a[i][j] % x;
                 if (remainder <= y) {
                     a[i][j] = n * x;
-
                 }
                 else {
                     a[i][j] = (n + 1) * x;
