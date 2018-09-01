@@ -18,9 +18,9 @@ public final class Solution {
      * @param      n     n value
      */
     /**
-     * to check if the number is odd.
+     * To check if the number is Odd.
      *
-     * @param      i     element in input
+     * @param      i     element in input.
      *
      * @return     if even, returns false else returns true.
      */
@@ -30,17 +30,25 @@ public final class Solution {
         }
         return false;
     }
-    public static boolean Prime(final int i) {
-        for (int j=2; j<i; j++) {
-            if (i%j == 0) {
+    
+    /**
+     * To check if the element is prime.
+     *
+     * @param      i     element in input
+     *
+     * @return     returns true if the number is composite else returns false.
+     */
+    public static boolean Composite(final int i) {
+        for (int j = 2; j < i; j++) {
+            if (i%j != 0) {
                 return true;
             }
         }
         return false;
     }
     static void oddComposites(final int n) {
-	for(int i=1; i<=n; i++) {
-        if (Prime(i) && Odd(i)) {
+	for(int i = 1; i <= n; i++) {
+        if (Composite(i) && Odd(i)) {
             System.out.println(i);
         }
 
