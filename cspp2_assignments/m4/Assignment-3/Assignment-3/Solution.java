@@ -40,7 +40,7 @@ public final class Solution
  */
     public static String binaryToDecimal(final String s) {
         double sum = 0;
-        for (int i = 1; i <= s.length(); i++) {
+        for (int i = 1; i <= s.length()-1; i++) {
             char a = s.charAt(i);
             int value = Character.getNumericValue(a);
             sum += (value * Math.pow(2, (s.length() - 1) - i));
