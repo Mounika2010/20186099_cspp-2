@@ -8,28 +8,29 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution
+public final class Solution
 {/*
-	Do not modify this main function.
-	*/
-	private Solution() {
-		//constructor.
-	}
-	/**
-	 * Main function.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(String[] args)
-	{
-		Scanner sc=new Scanner(System.in);
-		int n= sc.nextInt();
-		for(int i=0;i<=n;i++){
-			String s=sc.nextLine();
-			String res=binaryToDecimal(s);//Write binaryToDecimal function
-			System.out.println(res);
-		}
-	}
+    Do not modify this main function.
+    */
+    private Solution() {
+        //constructor.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i = 0; i <= n; i++){
+            String s = sc.nextLine();
+            String res = binaryToDecimal(s);
+            //Write binaryToDecimal function
+            System.out.println(res);
+        }
+    }
 /**
  * converting to binary.
  *
@@ -37,7 +38,7 @@ public class Solution
  *
  * @return     returns integer value
  */
-	public static String binaryToDecimal(final String s) {
+    public static String binaryToDecimal(final String s) {
         double sum = 0;
         for (int i = 0; i <= s.length() - 1; i++) {
             char a = s.charAt(i);
