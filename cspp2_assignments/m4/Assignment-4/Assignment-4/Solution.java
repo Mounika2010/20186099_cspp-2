@@ -9,9 +9,13 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {/*
+public class Solution {
+    /*
     Do not modify the main function.
     */
+    private Solution() {
+        //constructor.
+    }
     /**
      * Main function.
      *
