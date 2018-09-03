@@ -45,7 +45,7 @@ public final class Solution {
     }
     /**
      * Main function.
-     * 
+     *
      * @param      args  The arguments.
      */
     public static void main(final String[] args) {
