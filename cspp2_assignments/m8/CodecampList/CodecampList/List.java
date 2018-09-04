@@ -108,7 +108,7 @@ public class List {
      *
      * @param      item  The item
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the list.
         list[size] = item;
         size++;
@@ -243,7 +243,7 @@ public class List {
      * the item exists and otherwise false
      */
     /**
-     * if the list has the item that is passed as an argument 
+     * if the list has the item that is passed as an argument
      * to the method.
      *
      * @param      item  The item
@@ -262,7 +262,7 @@ public class List {
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
