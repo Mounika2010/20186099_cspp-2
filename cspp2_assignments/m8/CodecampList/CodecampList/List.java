@@ -248,7 +248,7 @@ public class List {
      */
     public String toString() {
         // Replace the code below
-        /*String str = "[";
+        String str = "[";
         String spclchar = ",";
         for (int i = 0; i < size - 1; i++) {
             str += Integer.toString(list[i]);
@@ -257,15 +257,15 @@ public class List {
             }
         }
         str += list[size - 1] + "]";
-        return str;*/
-        String str = "[";
+        return str;
+        /*String str = "[";
         for (int i= 0;i < size;i++) {
             if (i < size -1) {
                 str += list[i] +",";
             } 
         }
         str += list[size] + "]";
-        return str;
+        return str;*/
     }
 
     /*
