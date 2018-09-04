@@ -156,7 +156,7 @@ public class List {
      *
      * @param      index  The index
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index < size) {
@@ -178,7 +178,7 @@ public class List {
      * How can an element not be there at a given position?
      * Well, if the position is greater than the number of items
      * in the list then that would mean the item doesn't exist.
-     * How do we check if the position is greater than the 
+     * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
     /**
@@ -233,8 +233,8 @@ public class List {
         }
         str += list[size - 1] + "]";
         return str;
-    } 
-    
+    }
+
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
