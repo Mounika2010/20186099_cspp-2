@@ -31,7 +31,6 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
-    
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -56,7 +55,7 @@ public class List {
      * So, to keep track of the size we need a variable called size
      * Again, we use private as we don't want that size variable
      * to be accessed by the methods that are outside of the List class.
-     * 
+     *
      */
 
     // declare a private int size
@@ -162,11 +161,11 @@ public class List {
         // Think about what to do to the size variable.
         if (index < size) {
             for (int i = index; i < size - 1; i++) {
-                list[i] = list[i+1];
+                list[i] = list[i + 1];
             }
             size--;
             list[size] = 0;
-        }else {
+        } else {
             System.out.println("Invalid Position Exception");
         }
     }
@@ -189,7 +188,7 @@ public class List {
      *
      * @return     returns the item at the index position.
      */
-    public int get(int index) {
+    public int get(final int index) {
         // Replace the code below to write the code for get
         if (index > -1 && index < size) {
             return list[index];
@@ -250,7 +249,7 @@ public class List {
      *
      * @return     returns true if the item exists, otherwise false.
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
@@ -274,7 +273,7 @@ public class List {
      * @return     returns the index of the first occurence
      * of the specified element in the list.
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
@@ -289,7 +288,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
