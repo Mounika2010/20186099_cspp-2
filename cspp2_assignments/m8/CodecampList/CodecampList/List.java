@@ -113,7 +113,33 @@ public class List {
         size++;
 
     }
+    public void add(final int index, final int item) {
+        //Inserts the specified element at the end of the list.
+        if (index < size) {
+            list[index] = item;
+        } else {
+            if (index < 10) {
+                list[index] = item;
+                size++;
+            }
+        }
 
+    }
+    public void addall(int[] a) {
+        for (int i = 0; i < a.length ; i++ ) {
+            list[size] = a[i];
+            size++;
+        }
+    }
+    public int count(int item) {
+        int cnt = 0;
+        for (int i = 0; i < size;i++ ) {
+            if (list[i] == item) {
+                cnt++;
+            }
+        }
+        return cnt;
+    }
     /*
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
@@ -130,7 +156,6 @@ public class List {
         // replace the code below to implement the size method
         return size;
     }
-
     /*
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
@@ -223,7 +248,7 @@ public class List {
      */
     public String toString() {
         // Replace the code below
-        String str = "[";
+        /*String str = "[";
         String spclchar = ",";
         for (int i = 0; i < size - 1; i++) {
             str += Integer.toString(list[i]);
@@ -232,6 +257,14 @@ public class List {
             }
         }
         str += list[size - 1] + "]";
+        return str;*/
+        String str = "[";
+        for (int i= 0;i < size-1;i++) {
+            if (i < size -2) {
+                str += list[i] +",";
+            } 
+        }
+        str += list[size-1] + "]";
         return str;
     }
 
@@ -302,34 +335,34 @@ public class List {
             String[] tokens = line.split(" ");
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
-                case "add":
+            case "add":
                 l.add(Integer.parseInt(tokens[1]));
                 break;
-                case "size":
+            case "size":
                 // invoke size method and print the list size
                 // BTW, list size is not the array size
                 // it is the number of items in the list
                 System.out.println(l.size());
                 break;
-                case "print":
+            case "print":
                 // print the list (implement toString for this to work)
                 // expected format is [item-1,item-2,...,item-n]
                 // review the output testcase file
                 System.out.println(l);
                 break;
-                case "remove":
+            case "remove":
                 l.remove(Integer.parseInt(tokens[1]));
                 break;
-                case "indexOf":
+            case "indexOf":
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
-                case "get":
+            case "get":
                 System.out.println(l.get(Integer.parseInt(tokens[1])));
                 break;
-                case "contains":
+            case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
                 break;
-                default:
+            default:
                 break;
             }
         }
