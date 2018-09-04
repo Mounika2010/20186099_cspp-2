@@ -1,8 +1,14 @@
+/**
+ * @author : Mounika2010.
+ */
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 
+/**
+ * List of ints to store the items.
+ */
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+    //Implement all the methods mentioned to build a ListADT
 
     /*
      * The goal for the list is to store items.
@@ -29,6 +35,9 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+    /**
+    *private class so that the code doesn't get corrupted.
+    */
     private int[] list;
     /*
      * What are the other class variables needed for creating a list?
@@ -53,12 +62,18 @@ public class List {
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
+    /**
+    *for declaring a private int size.
+    */
     private int size;
 
 
     /*
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
+     */
+    /**
+     * List constructor.
      */
     public List() {
 
@@ -88,6 +103,11 @@ public class List {
      * 
      * The method returns void (nothing)
      */
+    /**
+     * add function adds an int item to the list.
+     *
+     * @param      item  The item
+     */
     public void add(int item) {
         //Inserts the specified element at the end of the list.
         list[size] = item;
@@ -101,6 +121,11 @@ public class List {
      * to the objects outside the list
      * 
      * The method returns an int. Empty list should return 0.
+     */
+    /**
+     * returns the value of size of list.
+     *
+     * @return     returns the size value.
      */
     public int size() {
         // replace the code below to implement the size method
@@ -127,6 +152,11 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
+    /**
+     * Removing an int item, specified by the index argument from the list.
+     *
+     * @param      index  The index
+     */
     public void remove(int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
@@ -151,6 +181,13 @@ public class List {
      * in the list then that would mean the item doesn't exist.
      * How do we check if the position is greater than the 
      * number of items in the list? Would size variable be useful?
+     */
+    /**
+     * returns the item at the index position.
+     *
+     * @param      index  The index
+     *
+     * @return     returns the item at the index position.
      */
     public int get(int index) {
         // Replace the code below to write the code for get
@@ -180,6 +217,11 @@ public class List {
      * not all the elements of the array.
      *
      */
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         // Replace the code below
         String str = "[";
@@ -200,6 +242,14 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
+    /**
+     * if the list has the item that is passed as an argument 
+     * to the method.
+     *
+     * @param      item  The item
+     *
+     * @return     returns true if the item exists, otherwise false.
+     */
     public boolean contains(int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
@@ -216,6 +266,14 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
+    /**
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     returns the index of the first occurence
+     * of the specified element in the list.
+     */
     public int indexOf(int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
@@ -226,7 +284,12 @@ public class List {
         return -1;
     }
 
-	public static void main(String[] args) {
+    /**
+     * Main funtion, this is the driver function of the code.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -269,5 +332,8 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
+
+
+
