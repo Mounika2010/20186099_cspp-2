@@ -259,12 +259,12 @@ public class List {
         str += list[size - 1] + "]";
         return str;*/
         String str = "[";
-        for (int i= 0;i < size-1;i++) {
-            if (i < size -2) {
+        for (int i= 0;i < size;i++) {
+            if (i < size -1) {
                 str += list[i] +",";
             } 
         }
-        str += list[size-1] + "]";
+        str += list[size] + "]";
         return str;
     }
 
