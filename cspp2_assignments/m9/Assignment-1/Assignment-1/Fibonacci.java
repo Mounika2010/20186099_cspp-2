@@ -32,11 +32,11 @@ public class Fibonacci {
         a.add(x1);
         int x2 = 1;
         a.add(x2);
-        for (int i = 2; i <= n ; i++) {
-            int sum = x1 + x2;
+        for (int i = 2; i <= n-1 ; i++) {
+            int sum = a.get(i-1) + a.get(i-2);
             a.add(sum);
-            x1 = x2;
-            x2 = sum;
+            // x1 = x2;
+            // x2 = sum;
 
         }
 
