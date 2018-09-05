@@ -20,7 +20,7 @@ import java.util.Scanner;
 /**
  * Class for fibonacci.
  */
-public class Fibonacci {
+public final class Fibonacci {
     /*
      * fib is a static method takes a argument n
      * n is the count of the fibonacci numbers to be generated.
@@ -48,7 +48,7 @@ public class Fibonacci {
         a.add(x1);
         int x2 = 1;
         a.add(x2);
-        for (int i = 2; i <= n - 1 ; i++) {
+        for (int i = 2; i <= n - 1; i++) {
             int sum = a.get(i - 1) + a.get(i - 2);
             a.add(sum);
             // x1 = x2;
@@ -64,7 +64,7 @@ public class Fibonacci {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
