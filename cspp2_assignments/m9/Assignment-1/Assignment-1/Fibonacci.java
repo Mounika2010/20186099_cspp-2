@@ -17,6 +17,9 @@ import java.util.Scanner;
  *
  */
 
+/**
+ * Class for fibonacci.
+ */
 public class Fibonacci {
     /*
      * fib is a static method takes a argument n
@@ -25,6 +28,16 @@ public class Fibonacci {
      *
      * Look for the hint.txt if some of the testcases fail.
      */
+    private Fibonacci() {
+        //constructor.
+    }
+    /**
+     * Appending fibonacci series into a list.
+     *
+     * @param      n     range of input.
+     *
+     * @return     returns list.
+     */
     public static List fib(int n) {
         // todo - complete this method
         List a = new List(n);
@@ -32,8 +45,8 @@ public class Fibonacci {
         a.add(x1);
         int x2 = 1;
         a.add(x2);
-        for (int i = 2; i <= n-1 ; i++) {
-            int sum = a.get(i-1) + a.get(i-2);
+        for (int i = 2; i <= n - 1 ; i++) {
+            int sum = a.get(i - 1) + a.get(i - 2);
             a.add(sum);
             // x1 = x2;
             // x2 = sum;
@@ -49,3 +62,5 @@ public class Fibonacci {
         System.out.println(fib(n));
     }
 }
+
+
