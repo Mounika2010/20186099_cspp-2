@@ -138,7 +138,7 @@ public class StringList implements StringListInterface {
     array to the end of list*/
 
     public void addAll(String[] items) {
-        for (int i=0;i<items.length;i++) {
+        for (int i = 0; i < items.length; i++) {
             add(items[i]);
         }
     }
@@ -179,10 +179,9 @@ public class StringList implements StringListInterface {
         // Think about what to do to the size variable.
         if (index < 0 || index >= size) {
             System.out.println("Invalid Position Exception");
-        }
-        else if (index < size) {
+        } else if (index < size) {
             for (int i = index; i < size - 1; i++) {
-            list[i] = list[i + 1];
+                list[i] = list[i + 1];
             }
             size--;
             list[size] = null;
