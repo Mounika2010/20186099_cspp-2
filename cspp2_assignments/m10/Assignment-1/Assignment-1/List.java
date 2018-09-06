@@ -336,7 +336,7 @@ public class List {
      */
     public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
-            if (item == list[i]){
+            if (item == list[i]) {
 
                 return i;
             }
@@ -350,7 +350,7 @@ public class List {
      * to the end of list.
      * @param       items The item.
      */
-    public void addAll(final int items[]) {
+    public void addAll(final int[] items) {
         // write the logic
         //
         // int length = items.length + size;
@@ -401,7 +401,7 @@ public class List {
      *
      * @return     returns the count of item.
      */
-    public int count(int item) {
+    public int count(final int item) {
         // write the logic
         int count = 0;
         for (int i = 0; i < size; i++) {
@@ -417,7 +417,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -437,7 +437,7 @@ public class List {
                     if (t.length == 1) {
                         l.add(Integer.parseInt(tokens[1]));
                     } else {
-                        if (t.length > 1){
+                        if (t.length > 1) {
                             l.add(Integer.parseInt(t[0]),
                                 Integer.parseInt(t[1]));
                         }
@@ -450,7 +450,7 @@ public class List {
             case "addAll":
                 if (tokens.length == 2) {
                     String[] t1 = tokens[1].split(",");
-                    int temp[] = new int[t1.length];
+                    int[] temp = new int[t1.length];
                     for (int i = 0; i < temp.length; i++) {
 
                         temp[i] = Integer.parseInt(t1[i]);
