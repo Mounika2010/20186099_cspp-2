@@ -177,7 +177,8 @@ public class List {
      * Will the client invoke resize or is it internal to List class?
      * Should the resize be public method or private?
      * Should the resize method return any values?
-     * You know enough of Object Oriented Programming to answer these questions :-)
+     * You know enough of Object Oriented Programming
+     * to answer these questions :-)
      *
      */
 
@@ -225,7 +226,7 @@ public class List {
      *
      * @param      index  The index
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index >= 0 && index < size) {
@@ -256,7 +257,7 @@ public class List {
      *
      * @return   returns the item that is at the index position.
      */
-    public int get(int index) {
+    public int get(final int index) {
         if (index < 0 || index >= size) {
             return -1;
         } else {
@@ -290,8 +291,9 @@ public class List {
      * @return     String representation of the object.
      */
     public String toString() {
-        if (size == 0)
+        if (size == 0){
             return "[]";
+        }
         String str = "[";
         int i = 0;
         for (i = 0; i < size - 1; i++) {
@@ -313,7 +315,7 @@ public class List {
      * @param      item  The item
      *
      * @return     returns true if the list has the item.
-     *              else returns false. 
+     *              else returns false.
      */
     public boolean contains(int item) {
         return indexOf(item) == -1;
