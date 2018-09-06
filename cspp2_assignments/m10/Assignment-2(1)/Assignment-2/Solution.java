@@ -66,7 +66,7 @@ public final class Solution {
                 System.out.println(l.contains(tokens[1]));
                 break;
                 default:
-                break;   
+                break;
             }
         }
     }
