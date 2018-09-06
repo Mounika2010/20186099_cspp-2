@@ -334,10 +334,12 @@ public class List {
      * @return     returns the index of the first occurence
      * of the specified element in the list.
      */
-    public int indexOf(int item) {
+    public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
-            if (item == list[i])
+            if (item == list[i]){
+
                 return i;
+            }
         }
         return -1;
     }
@@ -346,8 +348,9 @@ public class List {
     /**
      * inserts al the elements of specified int array
      * to the end of list.
+     * @param       items The item.
      */
-    public void addAll(int items[]) {
+    public void addAll(final int items[]) {
         // write the logic
         //
         // int length = items.length + size;
