@@ -168,7 +168,7 @@ public class List {
      * with the contents of the original array.
      *
      * TODO
-     * Create a method called resize(). Resize should create 
+     * Create a method called resize(). Resize should create
      * an new array that is
      * double the size of the old array.
      * Then copy the contents of the old array to the new one.
@@ -291,7 +291,7 @@ public class List {
      * @return     String representation of the object.
      */
     public String toString() {
-        if (size == 0){
+        if (size == 0) {
             return "[]";
         }
         String str = "[";
@@ -317,7 +317,7 @@ public class List {
      * @return     returns true if the list has the item.
      *              else returns false.
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         return indexOf(item) == -1;
     }
 
@@ -331,7 +331,7 @@ public class List {
      *
      * @param      item  The item
      *
-     * @return     returns the index of the first occurence 
+     * @return     returns the index of the first occurence
      * of the specified element in the list.
      */
     public int indexOf(int item) {
