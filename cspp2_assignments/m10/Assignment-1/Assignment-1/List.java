@@ -377,7 +377,7 @@ public class List {
      * @param      index  The index
      * @param      item   The item
      */
-    public void add(int index, int item) {
+    public void add(final int index, final int item) {
         // write the logic
         if (index >= 0) {
             for (int i = size; i > index; i--) {
@@ -434,8 +434,10 @@ public class List {
                     if (t.length == 1) {
                         l.add(Integer.parseInt(tokens[1]));
                     } else {
-                        if (t.length > 1)
-                            l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+                        if (t.length > 1){
+                            l.add(Integer.parseInt(t[0]),
+                                Integer.parseInt(t[1]));
+                        }
                     }
                 }
                 break;
@@ -446,8 +448,10 @@ public class List {
                 if (tokens.length == 2) {
                     String[] t1 = tokens[1].split(",");
                     int temp[] = new int[t1.length];
-                    for (int i = 0; i < temp.length; i++)
+                    for (int i = 0; i < temp.length; i++) {
+
                         temp[i] = Integer.parseInt(t1[i]);
+                    }
                     l.addAll(temp);
                 }
                 break;
@@ -474,6 +478,8 @@ public class List {
                 break;
             case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
+                break;
+            default :
                 break;
             }
         }
