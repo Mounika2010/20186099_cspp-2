@@ -17,6 +17,7 @@ class Student {
      */
     Student(final String name1) { //A constructor used to
         //initializing the instance variables
+        this.name = name1;
     }
     /**.
      * Gets the name.
