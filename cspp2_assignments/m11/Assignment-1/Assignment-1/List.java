@@ -264,7 +264,7 @@ public class List {
     /**
      * Inserts all the elements of specified int array to the end of
      * list.
-     * 
+     *
      * @param      newArray  The new array
      */
     public void addAll(final int[] newArray) {
@@ -277,7 +277,7 @@ public class List {
      Removes all of its elements that are contained in the specified int
      array.
     */
-    public void removeAll(int[] newArray) {
+    public void removeAll(final int[] newArray) {
         // write the logic
         for (int i = 0; i < newArray.length; i++) {
             for (int j = 0; j < size; j++) {
@@ -306,7 +306,7 @@ public class List {
      *
      * @return     returns a list object containing elements.
      */
-    public List subList(int start, int end) {
+    public List subList(final int start, final int end) {
         // write the logic for subList
         List newlist = new List();
         if (start <= 0 || end > size) {
@@ -337,7 +337,6 @@ public class List {
         }
         return false;
     }
-    
     /*
     * Removes all the elements from list
     * Think about this case and make the method
@@ -353,7 +352,11 @@ public class List {
         }
         size = 0;
     }
-
+/**
+ * The main function.
+ *
+ * @param      args  The arguments
+ */
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
