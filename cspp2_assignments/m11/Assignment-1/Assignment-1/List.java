@@ -243,7 +243,7 @@ public class List {
     // write the logic for subList
         List newlist = new List();
         if (start <= 0 || end > size) {
-            System.out.println("Index Out of Bound Exception");
+            System.out.println("Index Out of Bounds Exception");
             return null;
         } else {
             for (int i = start; i < end; i++) {
