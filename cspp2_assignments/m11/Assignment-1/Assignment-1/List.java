@@ -152,7 +152,7 @@ public class List {
      *
      * @param      index  The index
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         // write the logic for remove here. Think about what to do to the size
         // variable.
         if (index >= 0 && index < size) {
@@ -241,6 +241,14 @@ public class List {
      * Returns the index of the first occurrence of the specified element in
      * this list, or -1 if this list does not contain the element.
      */
+    /**
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     returns the index of first occurence
+     * of the specified element.
+     */
     public int indexOf(final int item) {
         // Replace the code below
         for (int i = 0; i < size; i++) {
@@ -253,6 +261,12 @@ public class List {
     /*
     Inserts all the elements of specified int array to the end of list
     */
+    /**
+     * Inserts all the elements of specified int array to the end of
+     * list.
+     * 
+     * @param      newArray  The new array
+     */
     public void addAll(final int[] newArray) {
         // write the logic
         for (int i = 0; i < newArray.length; i++) {
@@ -283,6 +297,15 @@ public class List {
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
     */
+    /**
+     * Returns a list object containing elements including startIndex and
+     * excluding endIndex.
+     *
+     * @param      start  The start
+     * @param      end    The end
+     *
+     * @return     returns a list object containing elements.
+     */
     public List subList(int start, int end) {
         // write the logic for subList
         List newlist = new List();
@@ -300,6 +323,14 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
+    /**
+     * Returns a boolean indicating whether the parameter is exactly matching
+     * with the given list or not.
+     *
+     * @param      list1  The list 1
+     *
+     * @return     returns true or false.
+     */
     public boolean equals(List list1 ) {
         if (Arrays.equals(list1.list, list)) {
             return true;
@@ -314,6 +345,9 @@ public class List {
     * Think about this case and make the method
     * the simpler.
     */
+    /**
+     * clears all the elements from the list.
+     */
     public void clear() {
         // write the logic for clear.
         for (int i = 0; i < size; i++) {
