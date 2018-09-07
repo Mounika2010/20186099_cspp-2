@@ -1,6 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * List of items.
+ */
 public class List {
     //Implement all the methods mentioned to build a ListADT
 
@@ -29,6 +32,9 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+    /**
+    *private int list.
+    */
     private int[] list;
     /*
      * What are the other class variables needed for creating a list?
@@ -53,10 +59,16 @@ public class List {
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
+    /**
+    * private int size.
+    */
     private int size;
     /*
      * The purpose of the constructor is to initialize the class variables with
      * some default values.
+     */
+    /**
+     * Constructs the object.
      */
     public List() {
 
@@ -80,6 +92,11 @@ public class List {
      * you can use the size variable to add item to the list.
      *
      * The method returns void (nothing)
+     */
+    /**
+     * Adding an int item to list.
+     * 
+     * @param      item  The item
      */
     public void add(int item) {
         //Inserts the specified element at the end of the list.
@@ -106,6 +123,11 @@ public class List {
      * The method returns an int. Empty list should return 0.
      *
      */
+    /**
+     * returns the value of the size.
+     *
+     * @return     returns size value in int.
+     */
     public int size() {
         // replace the code below to implement the size method
         return size;
@@ -124,6 +146,11 @@ public class List {
      * removed item, to the left So, the new array looks like this. array =
      * [1,3,0,0,0,0,0,0,0,0] The method returns void (nothing)
      *
+     */
+    /**
+     * Removes an int item at the specified index.
+     *
+     * @param      index  The index
      */
     public void remove(int index) {
         // write the logic for remove here. Think about what to do to the size
@@ -146,6 +173,13 @@ public class List {
      * the number of items in the list then that would mean the item doesn't
      * exist. How do we check if the position is greater than the number of
      * items in the list? Would size variable be useful?
+     */
+    /**
+     * Returns the items that is at the index position.
+     *
+     * @param      index  The index
+     *
+     * @return     returns the item at the index position
      */
     public int get(int index) {
         // Replace the code below to write the code for get
@@ -378,3 +412,6 @@ public class List {
         }
     }
 }
+
+
+
