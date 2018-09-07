@@ -274,12 +274,7 @@ public final class Solution {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "add":
-                    if (tokens.length == 2) {
-                        String[] t = tokens[1].split(",");
-                        if (t.length == 1) {
-                            l.add(Float.parseFloat(tokens[1]));
-                        }
-                    }
+                    
                 break;
                 case "size":
                     System.out.println(l.size());
