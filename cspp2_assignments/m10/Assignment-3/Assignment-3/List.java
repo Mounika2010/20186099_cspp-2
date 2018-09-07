@@ -2,7 +2,6 @@ import java.io.BufferedInputStream;
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Scanner;
-
 /*
      * The goal for the list is to store items.
      * How are we going to store the items in the list?
@@ -13,18 +12,18 @@ import java.util.Scanner;
      * Here E is a type parameter, and it will be replaced with
         actual type when the object got created.
      */
-public class List<E> {
+public class List <E> {
     private E[] list;
     private int size;
     //Constructor
     public List() {
         // Create a variable of the type Object[]
-        list = ((E[])new Object[10]);//Object is the base class for all the classes
+        list = ((E[]) new Object[10]);//Object is the base class for all the classes
         size = 0;
     }
     //Overloaded Constructor
     public List(int param) {
-        list = ((E[])new Object[param]);
+        list = ((E[]) new Object[param]);
         size = 0;
     }
     /* The add method does what the name suggests.
@@ -38,18 +37,18 @@ public class List<E> {
     public void add(E item) {
         //Inserts the specified element at the end of the list.
         //You can modify the code in this method.
-        list[(size++)] = item;
+        list[size] = item;
+        size++;
     }
     /*Inserts all the elements of specified int
     array to the end of list*/
     public void addAll(E[] items) {
         int i, j;
-        for (i = size, j = 0; j < items.length; i++, j++) {
+        for (i =0; i< items.length; i++) {
             if (size == list.length) {
                 resize();
             }
-            list[i] = items[j];
-            size += 1;
+            add(items[i]);
         }
     }
     /*
