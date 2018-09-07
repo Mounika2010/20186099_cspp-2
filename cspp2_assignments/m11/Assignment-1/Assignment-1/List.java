@@ -331,15 +331,13 @@ public class List {
      *
      * @return     returns true or false.
      */
-    public boolean equals(List list1 ) {
+    public boolean equals(final List list1) {
         if (Arrays.equals(list1.list, list)) {
             return true;
         }
         return false;
     }
-    {
-        // Replace the code below
-    }
+    
     /*
     * Removes all the elements from list
     * Think about this case and make the method
@@ -356,7 +354,7 @@ public class List {
         size = 0;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -370,85 +368,88 @@ public class List {
             String[] tokens = line.split(" ");
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
-            case "add":
-                if (tokens.length == 2) {
-                    String[] t = tokens[1].split(",");
-                    if (t.length == 1) {
-                        l.add(Integer.parseInt(tokens[1]));
+                case "add":
+                    if (tokens.length == 2) {
+                        String[] t = tokens[1].split(",");
+                        if (t.length == 1) {
+                            l.add(Integer.parseInt(tokens[1]));
                     }
                 }
                 break;
-            case "size":
-                System.out.println(l.size());
+                case "size":
+                    System.out.println(l.size());
                 break;
-            case "print":
-                System.out.println(l);
+                case "print":
+                    System.out.println(l);
                 break;
-            case "remove":
-                if (tokens.length == 2) {
-                    l.remove(Integer.parseInt(tokens[1]));
-                }
+                case "remove":
+                    if (tokens.length == 2) {
+                        l.remove(Integer.parseInt(tokens[1]));
+                    }
                 break;
-            case "indexOf":
-                if (tokens.length == 2) {
-                    System.out.println(l.indexOf(
+                case "indexOf":
+                    if (tokens.length == 2) {
+                        System.out.println(l.indexOf(
                                            Integer.parseInt(tokens[1])));
-                }
+                    }
                 break;
-            case "get":
-                if (tokens.length == 2) {
-                    System.out.println(l.get(
+                case "get":
+                    if (tokens.length == 2) {
+                        System.out.println(l.get(
                                            Integer.parseInt(tokens[1])));
-                }
+                    }
                 break;
-            case "contains":
-                if (tokens.length == 2) {
-                    System.out.println(l.contains(
+                case "contains":
+                    if (tokens.length == 2) {
+                        System.out.println(l.contains(
                                            Integer.parseInt(tokens[1])));
-                }
+                    }
                 break;
-            case "addAll":
-                if (tokens.length == 2) {
-                    String[] t1 = tokens[1].split(",");
-                    int[] temp = new int[t1.length];
-                    for (int i = 0; i < temp.length; i++) {
-                        temp[i] = Integer.parseInt(t1[i]);
+                case "addAll":
+                    if (tokens.length == 2) {
+                        String[] t1 = tokens[1].split(",");
+                        int[] temp = new int[t1.length];
+                        for (int i = 0; i < temp.length; i++) {
+                            temp[i] = Integer.parseInt(t1[i]);
                     }
                     l.addAll(temp);
                 }
                 break;
-            case "removeAll":
-                if (tokens.length == 2) {
-                    String[] t2 = tokens[1].split(",");
-                    int[] a = new int[t2.length];
-                    for (int i = 0; i < t2.length; i++)
-                        a[i] = Integer.parseInt(t2[i]);
+                case "removeAll":
+                    if (tokens.length == 2) {
+                        String[] t2 = tokens[1].split(",");
+                        int[] a = new int[t2.length];
+                        for (int i = 0; i < t2.length; i++) {
+                            a[i] = Integer.parseInt(t2[i]);
+                    }
                     l.removeAll(a);
                 }
                 break;
-            case "subList": {
-                if (tokens.length != 2) break;
+                case "subList":
+                    if (tokens.length != 2) {
+                break;
+                }
                 String[] arrstring3 = tokens[1].split(",");
                 List object = l.subList(Integer.parseInt(arrstring3[0]),
                                         Integer.parseInt(arrstring3[1]));
-                if (object != null)
+                if (object != null) {
                     System.out.println(object);
+                }
                 break;
-            }
-            case "equals":
-                if (tokens.length == 2) {
-                    String[] lt = tokens[1].split(",");
-                    List l2 = new List();
-                    for (int k = 0; k < lt.length; k++ ) {
-                        l2.add(Integer.parseInt(lt[k]));
+                case "equals":
+                    if (tokens.length == 2) {
+                        String[] lt = tokens[1].split(",");
+                        List l2 = new List();
+                        for (int k = 0; k < lt.length; k++ ) {
+                            l2.add(Integer.parseInt(lt[k]));
                     }
                     System.out.println(l.equals(l2));
                 }
                 break;
-            case "clear":
-                l.clear();
+                case "clear":
+                    l.clear();
                 break;
-            default:
+                default:
                 break;
             }
         }
