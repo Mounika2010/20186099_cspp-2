@@ -277,6 +277,11 @@ public class List {
      Removes all of its elements that are contained in the specified int
      array.
     */
+    /**
+     * Removes all the elements that are contained in the specified int.
+     *
+     * @param      newArray  The new array
+     */
     public void removeAll(final int[] newArray) {
         // write the logic
         for (int i = 0; i < newArray.length; i++) {
@@ -443,7 +448,7 @@ public class List {
                     if (tokens.length == 2) {
                         String[] lt = tokens[1].split(",");
                         List l2 = new List();
-                        for (int k = 0; k < lt.length; k++ ) {
+                        for (int k = 0; k < lt.length; k++) {
                             l2.add(Integer.parseInt(lt[k]));
                     }
                     System.out.println(l.equals(l2));
