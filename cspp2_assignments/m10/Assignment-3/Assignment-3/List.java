@@ -111,9 +111,8 @@ public class List <E> {
             return list[index];
         }
     }
-    private E[] resize() {
+    private void resize() {
         list = Arrays.copyOf(list, 2 * list.length);
-        return list;
     }
     /*
      * What happens when you print an object using println?
