@@ -176,7 +176,7 @@ public class List {
         }
         String str = "[";
         int i = 0;
-        for (i = 0; i < size; i++) {
+        for (i = 0; i < size - 1; i++) {
         	str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
