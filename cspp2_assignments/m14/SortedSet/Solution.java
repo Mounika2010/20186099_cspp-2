@@ -29,7 +29,7 @@ class SortedSet extends Set {
      */
     public void add(final int item) {
         if (!contains(item)) {
-            set[size] = item;
+            set[size++] = item;
         }
         sort(set);
     }
