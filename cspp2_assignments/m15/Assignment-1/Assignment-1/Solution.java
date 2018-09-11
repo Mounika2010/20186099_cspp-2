@@ -1,7 +1,7 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
-//@ author SupriyaMadupathi
+//@ author Mounika2010.
 
 /**
  * List of.
