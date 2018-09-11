@@ -190,7 +190,7 @@ import java.util.Arrays;
         String str = "{";
         for (int i = 0; i < size - 1; i++) {
             str = str + set[i] + ", ";
-        } return str + set[size] + "}";
+        } return str + set[size - 1] + "}";
     }
     /**
      * returns true if this set contains the item.
