@@ -109,7 +109,7 @@ public class Solution {
     public void add(final int item) {
 
         //Inserts the specified element at the end of the zelist
-        list[size] = item;
+        list[size++] = item;
     }
     /**
      * The size method returns the value of the size. The purpose of the method
