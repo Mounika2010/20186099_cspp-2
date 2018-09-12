@@ -185,7 +185,7 @@ class BookYourShow {
      * showresize method.
      */
     public void showresize() {
-        shows = Arrays.copyOf(shows, shows.length);
+        shows = Arrays.copyOf(shows, shows.length * 2);
     }
     /**
      * patronresize method.
