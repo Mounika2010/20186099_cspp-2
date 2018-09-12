@@ -175,12 +175,17 @@ class BookYourShow {
     /**
      * Constructs the object.
      */
-   
+    BookYourShow() {
+        shows = new Show[TEN];
+        patrons = new Patron[TEN];
+        showsize = 0;
+        patronsize = 0;
+    }
     /**
      * showresize method.
      */
     public void showresize() {
-        shows = Arrays.copyOf(shows, shows.length * 2);
+        shows = Arrays.copyOf(shows, shows.length);
     }
     /**
      * patronresize method.
