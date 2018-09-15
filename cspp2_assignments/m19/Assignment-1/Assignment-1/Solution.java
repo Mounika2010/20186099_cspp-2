@@ -104,6 +104,8 @@ public final class Solution {
  		}
  		if (quizz.size() != 0) {
  			System.out.println(quizz.size() + "are added to the quiz");
+ 		} else {
+ 			System.out.println("Quiz does not have questions");
  		}
         
     }
