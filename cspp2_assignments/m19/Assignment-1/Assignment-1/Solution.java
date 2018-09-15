@@ -54,7 +54,7 @@ public final class Solution {
         // check if there is one more line to process
                 while (s.hasNext()) {
             // read the line
-            //System.out.println("LOAD_QUESTIONS 4");
+            System.out.println("LOAD_QUESTIONS 4");
             String line = s.nextLine();
              // split the line using space
             String[] tokens = line.split(" ");
@@ -103,7 +103,7 @@ public final class Solution {
         	questionCount--;
  		}
  		if (quizz.size() != 0) {
- 			System.out.println(quizz.size() + "Invalid max marks for question about sony");
+ 			System.out.println(quizz.size() + "are added to the quiz");
  		}
         
     }
