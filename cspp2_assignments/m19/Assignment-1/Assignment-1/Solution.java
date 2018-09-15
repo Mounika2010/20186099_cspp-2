@@ -121,6 +121,14 @@ public final class Solution {
         // write your code here to display the quiz questions
         // read the user responses from the console
         // store the user respones in the quiz object
+        for(int i=0;i<quizz.size();i++){
+            System.out.println(quizz.get(i).questions+"("+quizz.get(i).marks+")");
+            for(int j =0 ; j<quizz.get(i).choices.length; j++) {
+                System.out.print(quizz.get(i).choices[j] + "   ");
+            }
+            System.out.println();
+			System.out.println();
+        }
         
     }
 
