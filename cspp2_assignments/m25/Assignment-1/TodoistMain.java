@@ -53,7 +53,7 @@ class Task {
 
 
         } else {
-            ifimp = "Not important";
+            ifimp = "Not Important";
 
         }
         if (urgent) {
