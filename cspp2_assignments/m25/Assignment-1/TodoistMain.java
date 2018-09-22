@@ -60,7 +60,7 @@ class Task {
             ifurgnt = "Urgent";
 
         } else {
-            ifurgnt = "Not urgent";
+            ifurgnt = "Not Urgent";
         }
 
         return title + ", " + assignedTo + ", " + timeToComplete + ", " + ifimp + ", " + ifurgnt + ", " + status;
