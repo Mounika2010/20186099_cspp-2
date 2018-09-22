@@ -152,7 +152,7 @@ public class TodoistMain {
      */
     public static void testTask(final String[] tokens) {
         try {
-            // System.out.println(createTask(tokens));
+            System.out.println(createTask(tokens));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
