@@ -49,7 +49,7 @@ class Task {
 		}
 	public String toString() {
 		if (important) {
-            ifimp = "important";
+            ifimp = "Important";
 
 
         } else {
