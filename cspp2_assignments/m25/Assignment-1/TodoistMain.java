@@ -23,15 +23,9 @@ class Task {
 		this.status = status;
 
 		
-		// throws Exception {
-		// 	title = "null"; 
-		
-		// }
+	   
 
-		// catch {
-		// 	System.out.println("Title not provided");
 
-		// }
 
 		// throws Exception() {
 		// 	timeToComplete < 0;
