@@ -65,18 +65,16 @@ class Task {
 
         return title + ", " + assignedTo + ", " + timeToComplete + ", " + ifimp + ", " + ifurgnt + ", " + status;
 	}
-    public void getNextTask(String name, int taskcount) {
-
-    }
+   
 }
 
 class Todoist {
     Todoist() {
 
     }
-    void totalTime4Completion() {
-
-    }
+    // public int totalTime4Completion() {
+    //     return null;
+    // }
     public void getNextTask(String task, int x) {
 
     }
@@ -117,15 +115,15 @@ public class TodoistMain {
                     System.out.println(todo);
                 break;
                 case "get-next":
-                    // System.out.println(todo.getNextTask(tokens[1]));
+                    //System.out.println(todo.getNextTask(tokens[1]));
                 break;
                 case "get-next-n":
-                    // int n = Integer.parseInt(tokens[2]);
-                    // Task[] tasks = todo.getNextTask(tokens[1], n);
-                    // System.out.println(Arrays.deepToString(tasks));
+                    int n = Integer.parseInt(tokens[2]);
+                    //Task[] tasks = todo.getNextTask(tokens[1], n);
+                    //System.out.println(Arrays.deepToString(tasks));
                 break;
                 case "total-time":
-                    // System.out.println(todo.totalTime4Completion());
+                     //System.out.println(todo.totalTime4Completion());
                 break;
                 default:
                 break;
