@@ -62,11 +62,11 @@ public class Solution{
 								//add more number of rooms to the existing rooms
 								roomnum = Integer.parseInt(tokens[1]);
 								
-							    if(h.buildRooms(roomnum))
-							        System.out.println("Added "+roomnum+" more rooms");
-							    else
-							        System.out.println("No rooms are added");
-							      break;
+							    // if(h.buildRooms(roomnum))
+							    //     System.out.println("Added "+roomnum+" more rooms");
+							    // else
+							    //     System.out.println("No rooms are added");
+							    //   break;
 				}
 				c++;
 		}

@@ -82,7 +82,14 @@ class Hotel {
     }
 
     public void printReservations() {
-
+        for (int i = 0;i < hotelrooms; i++) {
+            if (
+                hotelrooms[i] != null) {
+                int j = i + 1;
+                System.out.println(hotelrooms[i] + " " + j);
+            }
+        }
+ 
     }
 
     public void cancelReservations(String person) {
@@ -90,6 +97,7 @@ class Hotel {
     }
 
     public void buildRooms(int num) {
+        return true;
 
     }
 
