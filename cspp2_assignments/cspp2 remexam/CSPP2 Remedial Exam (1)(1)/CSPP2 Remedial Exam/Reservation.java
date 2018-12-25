@@ -96,7 +96,7 @@ class Hotel {
 
     }
 
-    public void buildRooms(int num) {
+    public boolean buildRooms(int num) {
         return true;
 
     }
