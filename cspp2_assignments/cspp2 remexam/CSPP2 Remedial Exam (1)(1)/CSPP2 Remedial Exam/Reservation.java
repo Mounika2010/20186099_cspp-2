@@ -48,32 +48,35 @@ public class Reservation{
 
 class Hotel {
 
-    private String[] hotelrooms;
+    private Reservation[] hotelrooms;
     private int size;
- 
+    int count = 0;
 
     public Hotel () {
-        hotelrooms = new String[5];
+        hotelrooms = new Reservation[5];
         size = 0;
 
 
     }
 
     public int reserveRoom(String person) {
-    
-        for (int i = 0; i < hotelrooms.length; i++) {
-            if (hotelrooms[i] != null) {
-                int k = 0+1;
-
-            } else {
-                hotelrooms[i] = person;
-                size++;
-                int p = i+1;
-                return p;
-            }
-            
+        Reservation r = new Reservation(person);
+        if(size == 0) {
+            hotelrooms[count] = r;
+            ++size;
+            r.setRoom(count + 1);
+            return ++count;
+        }if (size >= hotelrooms.length) {
+            System.out.println("All rooms are reserved");
         }
-        return -1;
+        if (size >= 1) {
+            hotelrooms[count] = r;
+            ++size;
+            r.setRoom(count + 1);
+        }
+        return count++;
+    
+       
     }
 
     public boolean reserveRoom(String person, int roomNum) {
@@ -82,13 +85,7 @@ class Hotel {
     }
 
     public void printReservations() {
-        for (int i = 0;i < hotelrooms; i++) {
-            if (
-                hotelrooms[i] != null) {
-                int j = i + 1;
-                System.out.println(hotelrooms[i] + " " + j);
-            }
-        }
+       
  
     }
 
