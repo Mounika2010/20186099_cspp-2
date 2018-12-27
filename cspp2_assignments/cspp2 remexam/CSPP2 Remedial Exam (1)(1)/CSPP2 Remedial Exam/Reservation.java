@@ -62,20 +62,18 @@ class Hotel {
 
     public int reserveRoom(String person) {
         Reservation r = new Reservation(person);
-        if(size == 0) {
-            hotelrooms[count] = r;
-            ++size;
-            r.setRoom(count + 1);
-            return ++count;
-        }if (size >= hotelrooms.length) {
-            System.out.println("All rooms are reserved");
-            return -1;
+        if (size == hotelrooms.length) {
+            System.out.println("All Rooms are reserved");
         }
-        else {
-            hotelrooms[count] = r;
-            ++size;
-            r.setRoom(count + 1);
+        int i = 1;
+        for ( i = 1;i < hotelrooms.length;i++) {
+            if (hotelrooms[i]== null) {
+                hotelrooms[i] = new Reservation(person,i);
+                size++;
+                return i;
+            }
         }
+        return -1;
         
        
     }
