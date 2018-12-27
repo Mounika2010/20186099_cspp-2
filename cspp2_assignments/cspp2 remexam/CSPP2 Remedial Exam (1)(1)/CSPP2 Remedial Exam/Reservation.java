@@ -48,8 +48,8 @@ public class Reservation{
 
 class Hotel {
 
-    private Reservation[] hotelrooms;
-    private int size;
+    Reservation[] hotelrooms;
+    int size;
     int count = 0;
 
     public Hotel () {
@@ -69,13 +69,13 @@ class Hotel {
         }if (size >= hotelrooms.length) {
             System.out.println("All rooms are reserved");
         }
-        if (size >= 1) {
-            hotelrooms[count] = r;
-            ++size;
-            r.setRoom(count + 1);
-        }
-        return count++;
-    
+        // if (size >= 1) {
+        //     hotelrooms[count] = r;
+        //     ++size;
+        //     r.setRoom(count + 1);
+        // }
+        // return count++;
+        return -1;
        
     }
 
