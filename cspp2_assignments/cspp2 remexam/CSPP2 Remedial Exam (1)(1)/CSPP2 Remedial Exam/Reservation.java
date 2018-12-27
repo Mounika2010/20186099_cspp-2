@@ -19,6 +19,7 @@ public class Reservation{
 
     }
 
+    
     //mutators, set the room number or name
     public void setRoom(int newroom){
     	this.roomNumber = newroom;
@@ -79,29 +80,38 @@ class Hotel {
        
     }
 
+
+    public boolean isEmpty(int roomNumber){
+        for (int i = 1;i < hotelrooms.length;i++){
+            if (hotelrooms[roomNumber]== null) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean reserveRoom(String person, int roomNum) {
-        if (size < hotelrooms.length && hotelrooms[roomNum - 1] != null) {
-            System.out.println("Room is already reserved");
-            return false;
-        } else if (size == hotelrooms.length) {
+        if (size == hotelrooms.length) {
             System.out.println("All Rooms are reserved");
             return false;
+        }else if(!isEmpty(roomNum)){
+            System.out.println("Room is already reserved");
+            return false;
+        } else {
+            hotelrooms[roomNum] = new Reservation(person,roomNum);
+            size++;
         }
-        int k = roomNum - 1;
-        hotelrooms[k] = person;
-        size++;
         return true;
        
     }
 
     public void printReservations() {
-         for (int i = 0; i < hotelrooms.length; i++) {
-            if (hotelrooms[i] != null) {
-                int j = i + 1;
-                System.out.println(this.hotelrooms[i] + " " + j);
+        for (int i = 1;i < hotelrooms.length;i++) {
+            if (hotelrooms[i]!= null) {
+                System.out.println(hotelrooms[i]);
             }
-}
- 
+        }
+         
     }
 
     public void cancelReservations(String person) {
