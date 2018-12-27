@@ -68,24 +68,39 @@ class Hotel {
             return ++count;
         }if (size >= hotelrooms.length) {
             System.out.println("All rooms are reserved");
+            return -1;
         }
-        // if (size >= 1) {
-        //     hotelrooms[count] = r;
-        //     ++size;
-        //     r.setRoom(count + 1);
-        // }
-        // return count++;
-        return -1;
+        else {
+            hotelrooms[count] = r;
+            ++size;
+            r.setRoom(count + 1);
+        }
+        
        
     }
 
     public boolean reserveRoom(String person, int roomNum) {
+        if (size < hotelrooms.length && hotelrooms[roomNum - 1] != null) {
+            System.out.println("Room is already reserved");
+            return false;
+        } else if (size == hotelrooms.length) {
+            System.out.println("All Rooms are reserved");
+            return false;
+        }
+        int k = roomNum - 1;
+        hotelrooms[k] = person;
+        size++;
         return true;
-
+       
     }
 
     public void printReservations() {
-       
+         for (int i = 0; i < hotelrooms.length; i++) {
+            if (hotelrooms[i] != null) {
+                int j = i + 1;
+                System.out.println(this.hotelrooms[i] + " " + j);
+            }
+}
  
     }
 
