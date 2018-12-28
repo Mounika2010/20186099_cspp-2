@@ -51,10 +51,11 @@ class Hotel{
 	public void cancelReservations(String person) {
 
 
-
 	}
 
 	public boolean buildRooms(int num) {
+		// Reservation[] newrooms = new Reservation[hotelrooms.length];
+		hotelrooms = Arrays.copyOf(hotelrooms, hotelrooms.length+ num);
 		return true;
 	}
 }
