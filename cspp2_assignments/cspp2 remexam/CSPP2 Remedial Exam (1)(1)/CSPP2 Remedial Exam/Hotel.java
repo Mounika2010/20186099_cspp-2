@@ -41,8 +41,8 @@ class Hotel{
 	}
 
 	public void printReservations() {
-		for (int i = 1; i < hotelrooms.length; i++) {
-			if (hotelrooms[i] != null) {
+		for (int i = 0; i < hotelrooms.length; i++) {
+			if(hotelrooms[i] != null) {
 				System.out.println(hotelrooms[i]);
 			}
 		}
