@@ -241,23 +241,9 @@ kiran 2
 kalyani 3
 kumar 4
 swathi 5
-kumar now has no reservations.
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-swathi 5
-Added 2 more rooms
-alekhya 6
-manasa 7
-All Rooms are reserved
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-swathi 5
-alekhya 6
-manasa 7
+Exception in thread "main" java.lang.NullPointerException
+	at Hotel.cancelReservations(Hotel.java:53)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 ########## Testcase 7: Failed ##########
 Expected Output: 
@@ -306,28 +292,7 @@ kiran 2
 kalyani 3
 kumar 4
 kumar 5
-kumar now has no reservations.
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-kumar 5
-Added 5 more rooms
-alekhya 6
-manasa 7
-kumar 8
-karthik 9
-manohar 10
-All Rooms are reserved
-All Rooms are reserved
-murthy 1
-kiran 2
-kalyani 3
-kumar 4
-kumar 5
-alekhya 6
-manasa 7
-kumar 8
-karthik 9
-manohar 10
+Exception in thread "main" java.lang.NullPointerException
+	at Hotel.cancelReservations(Hotel.java:53)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
