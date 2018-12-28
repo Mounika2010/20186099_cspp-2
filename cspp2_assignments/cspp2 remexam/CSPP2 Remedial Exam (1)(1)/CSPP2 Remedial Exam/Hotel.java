@@ -5,7 +5,7 @@ class Hotel{
 
 	public Hotel() {
 		size = 0;
-		hotelrooms = new Reservation[5];
+		hotelrooms = new Reservation[6];
 	}
 
 	public int reserveRoom(String person) {
