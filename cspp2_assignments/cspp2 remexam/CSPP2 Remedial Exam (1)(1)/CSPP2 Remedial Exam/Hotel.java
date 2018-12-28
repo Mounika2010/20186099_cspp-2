@@ -10,7 +10,7 @@ class Hotel{
 
 	public int reserveRoom(String person) {
 		if (size == hotelrooms.length) {
-			System.out.println("All rooms are reserved");
+			System.out.println("All Rooms are reserved");
 		}
 		for (int i = 1; i < hotelrooms.length; i++) {
 			if(hotelrooms[i] == null) {
@@ -26,7 +26,7 @@ class Hotel{
 
 	public boolean reserveRoom(String person, int roomNum) {
 		if (size == hotelrooms.length) {
-			System.out.println("All rooms are reserved");
+			System.out.println("All Rooms are reserved");
 			return false;
 
 		} else if (hotelrooms[roomNum] != null) {
