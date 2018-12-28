@@ -48,25 +48,25 @@ public class Solution{
                                 //print all the reservations done in the hotel
                                 h.printReservations();
                                  break;
-                    // case "cancel":
-                    //          //cancel the rooms for that particular person
-                    //          name = tokens[1];
-                    //          if(!((name==null) || (name.equals("")))){
-                    //                  h.cancelReservations(name);
-                    //                  System.out.println(name+" now has no reservations.");
-                    //              }else{
-                    //                  System.out.println("No input");
-        //                       }
-        //                       break;
-                    // case "build":
-                    //          //add more number of rooms to the existing rooms
-                    //          roomnum = Integer.parseInt(tokens[1]);
+                    case "cancel":
+                             //cancel the rooms for that particular person
+                             name = tokens[1];
+                             if(!((name==null) || (name.equals("")))){
+                                     h.cancelReservations(name);
+                                     System.out.println(name+" now has no reservations.");
+                                 }else{
+                                     System.out.println("No input");
+                              }
+                              break;
+                    case "build":
+                             //add more number of rooms to the existing rooms
+                             roomnum = Integer.parseInt(tokens[1]);
                                 
-                    //          if(h.buildRooms(roomnum))
-                    //              System.out.println("Added "+roomnum+" more rooms");
-                    //          else
-                    //              System.out.println("No rooms are added");
-                    //            break;
+                             if(h.buildRooms(roomnum))
+                                 System.out.println("Added "+roomnum+" more rooms");
+                             else
+                                 System.out.println("No rooms are added");
+                               break;
                 }
                 c++;
         }
