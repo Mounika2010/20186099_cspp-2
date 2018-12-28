@@ -5,7 +5,7 @@ class Hotel{
 
 	public Hotel() {
 		size = 0;
-		hotelrooms = new Reservation[6];
+		hotelrooms = new Reservation[5];
 	}
 
 	public int reserveRoom(String person) {
@@ -49,6 +49,8 @@ class Hotel{
 	}
 
 	public void cancelReservations(String person) {
+
+
 
 	}
 
