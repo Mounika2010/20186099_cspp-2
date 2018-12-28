@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 rehana 1
 karan 3
@@ -14,12 +14,15 @@ Your Output:
 rehana 1
 karan 3
 murthy 2
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Hotel.isEmpty(Reservation.java:84)
-	at Hotel.reserveRoom(Reservation.java:95)
-	at Solution.main(Solution.java:42)
+rajiv 5
+kalyani 4
+rehana 1
+murthy 2
+karan 3
+kalyani 4
+rajiv 5
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -37,12 +40,15 @@ kiran 2
 murthy 1
 rajiv 3
 kalyani 4
+kumar 5
+All Rooms are reserved
 murthy 1
 kiran 2
 rajiv 3
 kalyani 4
+kumar 5
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -61,12 +67,16 @@ kiran 2
 murthy 1
 rajiv 3
 kalyani 4
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Hotel.isEmpty(Reservation.java:84)
-	at Hotel.reserveRoom(Reservation.java:95)
-	at Solution.main(Solution.java:42)
+kumar 5
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+rajiv 3
+kalyani 4
+kumar 5
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 kiran 2
 murthy 1
@@ -86,10 +96,13 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Hotel.isEmpty(Reservation.java:84)
-	at Hotel.reserveRoom(Reservation.java:95)
-	at Solution.main(Solution.java:42)
+swathi 5
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -115,11 +128,14 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
-Added 2 more rooms
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at Hotel.isEmpty(Reservation.java:84)
-	at Hotel.reserveRoom(Reservation.java:95)
-	at Solution.main(Solution.java:42)
+swathi 5
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -164,10 +180,9 @@ Room is already reserved
 murthy 1
 kiran 2
 kumar 3
-Added 5 more rooms
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at Hotel.isEmpty(Reservation.java:84)
-	at Hotel.reserveRoom(Reservation.java:95)
+	at Hotel.isEmpty(Hotel.java:31)
+	at Hotel.reserveRoom(Hotel.java:41)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 6: Failed ##########
@@ -205,20 +220,25 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
+swathi 5
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
-kumar now has no reservations.
+swathi 5
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
-Added 2 more rooms
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at Hotel.isEmpty(Reservation.java:84)
-	at Hotel.reserveRoom(Reservation.java:95)
-	at Solution.main(Solution.java:42)
+swathi 5
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+swathi 5
 ----------------------------------------
 ########## Testcase 7: Failed ##########
 Expected Output: 
@@ -261,18 +281,27 @@ murthy 1
 Room is already reserved
 kalyani 3
 kumar 4
+kumar 5
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
-kumar now has no reservations.
+kumar 5
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
-Added 5 more rooms
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at Hotel.isEmpty(Reservation.java:84)
-	at Hotel.reserveRoom(Reservation.java:95)
-	at Solution.main(Solution.java:42)
+kumar 5
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+All Rooms are reserved
+murthy 1
+kiran 2
+kalyani 3
+kumar 4
+kumar 5
 ----------------------------------------
