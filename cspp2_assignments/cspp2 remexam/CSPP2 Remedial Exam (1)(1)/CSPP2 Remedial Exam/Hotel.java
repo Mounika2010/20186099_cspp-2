@@ -52,6 +52,8 @@ class Hotel{
 		for (int i = 0; i < hotelrooms.length; i++) {
 			if(hotelrooms[i].getpersonName().equals(person)) {
 				hotelrooms[i] = null;
+				--size;
+
 			}
 		}
 
