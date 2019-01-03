@@ -3,21 +3,22 @@ public class CardCatalog {
 	int maxcards;
 	int size;
 	Card[] cards;
+	
 
 	CardCatalog(int maxcards) {
 		this.maxcards = 0;
-		cards = new Card[maxcards];
+		cards = new Card[10];
 		size = 0;
 
 	}
 
-	public void addACard(Card c1) {
+	public int addACard(Card c1) {
 		for (int i = 0; i < cards.length; i++) {
 			if(cards[i] == null) {
 				c1.toString();
 				cards[i] = c1;
-				++size;
-				return 1;
+				size++;
+				return i;
 			}			
 		}
 		return -1;
@@ -26,10 +27,10 @@ public class CardCatalog {
 
 	public Card getCardByTitle(String bookTitle) {
 		for (int i = 0; i < size; i++) {
-			if(cards[i] != null) {
-				if (cards[i].getTitle().equals(bookTitle)) {
-					return cards[i];
-				}
+			
+			if (cards[i].getTitle().equals(bookTitle)) {
+				return cards[i];
+				
 			}
 		}
 		return null;
@@ -54,7 +55,4 @@ public class CardCatalog {
 	public void clear() {
 		size = 0;
 	}
-
-
-
 }

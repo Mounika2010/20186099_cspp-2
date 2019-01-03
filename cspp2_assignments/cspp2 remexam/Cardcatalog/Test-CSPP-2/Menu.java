@@ -34,6 +34,7 @@ public class Menu {
 		cc.addACard(c3);
 
 		// Checks the count of current cards in the catalogue.
+		System.out.println(cc.sizeOfCatalog());
 		if (cc.sizeOfCatalog() == 3) {
 			System.out.println("Test Case 2 Passed");
 		} else {
