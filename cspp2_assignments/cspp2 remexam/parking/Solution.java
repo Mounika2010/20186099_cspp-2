@@ -11,6 +11,7 @@ class Slot {
 class Parking {
 	int size;
 	Slot[] slots;
+	
 	Parking(int n) {
 		size = 0;
 		slots = new Slot[n];
