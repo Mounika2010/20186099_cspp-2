@@ -10,6 +10,8 @@ class Question{
 	Question(String questionss, String[] options) {
 		this.questionss = questionss;
 		this.options = options;
+		System.out.println(questionss);
+		System.out.println(Arrays.toString(options));
 		size = 0;
 		options = new String[4];
 
@@ -66,14 +68,15 @@ class Quiz{
 	int size;
 	int n;
 	Quiz() {
-		size = n;
-		questions = new Question[n];
+		size = 0;
+		questions = new Question[10];
 
 	}
 
 	public void addQuestion(Question q) {
 		questions[size] = q;
 		size++;
+		// System.out.println(size);
 
 	}
 
@@ -133,14 +136,14 @@ public class Solution {
 				int q = Integer.parseInt(lines[0]);
 				Participant p = new Participant(name, q-1, lines[1]);
 				Question question = quiz.getQuestion(q-1);
-				question.setOptionVotes(question.indexOf(lines[1]));
+				// question.setOptionVotes(question.indexOf(lines[1]));
 			}
 		}
 
-		for (int i = 0; i < questions; i++) {
-			System.out.println("Highest number of votes for question : "+ quiz.getQuestion(i).getText()
-			 + " : " + quiz.getQuestion(i).commonSelectedOption());
-		}
+		// for (int i = 0; i < questions; i++) {
+		// 	System.out.println("Highest number of votes for question : "+ quiz.getQuestion(i).getText()
+		// 	 + " : " + quiz.getQuestion(i).commonSelectedOption());
+		// }
 
 	}
 }
