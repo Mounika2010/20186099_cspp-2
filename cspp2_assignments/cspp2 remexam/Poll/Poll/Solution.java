@@ -3,56 +3,43 @@ import java.util.Arrays;
 
 class Question{
 
-	String questionss;
+	String questions;
 	String[] options;
-	int size;
+	int[] noOfQues;
 
-	Question(String questionss, String[] options) {
-		this.questionss = questionss;
+	Question(String questions, String[] options) {
+		this.questions = questions;
 		this.options = options;
-		System.out.println(questionss);
-		System.out.println(Arrays.toString(options));
-		size = 0;
-		options = new String[4];
+		// System.out.println(questionss);
+		// System.out.println(Arrays.toString(options));
+		noOfQues = new int[4];
 
 	}
+
+	public String getText() {
+		return questions;
+	}
+
 
 	public void setOptionVotes(int votes) {
-			int op1 = 0;
-			int op2 = 0;
-			int op3 = 0;
-			int op4 = 0;
-
-			if(votes == 0) {
-				op1++;
-			}
-
-			else if (votes == 1) {
-				op2++;
-			}
-			else if (votes == 2) {
-				op3++;
-			}
-
-			else {
-				op4++;
-			}
-
-			int maximumvotes = 0;
-			if (op1 > op2 && op1 > op2 && op1 > op3 && op1 > op4) {
-				maximumvotes = 0;
-			}
-			if (op2 > op3 && op2 > op3 && op2 > op1 && op1 > op4) {
-				maximumvotes = 1;
-			}
-
-			return;
+		noOfQues[votes] = noOfQues[votes] + 1;
 
 	}
 
-	public int indexOf(String[] options){
+	public int indexOf(String options){
 		for (int i = 0; i < 4; i++) {
-			if (options[i].equals(options)) {
+			if (this.
+
+
+
+
+
+
+
+
+
+
+				options[i].equals(options)) {
 				return i;
 			}
 		}
@@ -60,13 +47,24 @@ class Question{
 		return 0;
 	}
 
+	public String commonSelectedOption() {
+		int max = 0;
+		int key = 0;
+		for (int i = 0; i< 4; i++) {
+			if (noOfQues[i] > max) {
+				max = noOfQues[i];
+				key = i;
+			}
+		}
+		return options[key];
+	}
 
 }
 
 class Quiz{
 	Question[] questions;
 	int size;
-	int n;
+
 	Quiz() {
 		size = 0;
 		questions = new Question[10];
@@ -74,8 +72,7 @@ class Quiz{
 	}
 
 	public void addQuestion(Question q) {
-		questions[size] = q;
-		size++;
+		questions[size++] = q;
 		// System.out.println(size);
 
 	}
@@ -83,12 +80,6 @@ class Quiz{
 	public Question getQuestion(int i) {
 		return questions[i];
 	}
-
-	public String commonSelectedOption() {
-		return null;
-	}
-
-
 
 }
 
@@ -105,13 +96,6 @@ class Participant{
 		this.optionnumber = optionnumber;
 		this.optionselected = optionselected;
 	}
-
-	public String getName(String nameofperson) {
-		return null;
-	}
-
-
-
 }
 
 public class Solution {
@@ -136,14 +120,14 @@ public class Solution {
 				int q = Integer.parseInt(lines[0]);
 				Participant p = new Participant(name, q-1, lines[1]);
 				Question question = quiz.getQuestion(q-1);
-				// question.setOptionVotes(question.indexOf(lines[1]));
+				question.setOptionVotes(question.indexOf(lines[1]));
 			}
 		}
 
-		// for (int i = 0; i < questions; i++) {
-		// 	System.out.println("Highest number of votes for question : "+ quiz.getQuestion(i).getText()
-		// 	 + " : " + quiz.getQuestion(i).commonSelectedOption());
-		// }
+		for (int i = 0; i < questions; i++) {
+			System.out.println("Highest number of votes for question : "+ quiz.getQuestion(i).getText()
+			 + " : " + quiz.getQuestion(i).commonSelectedOption());
+		}
 
 	}
 }
