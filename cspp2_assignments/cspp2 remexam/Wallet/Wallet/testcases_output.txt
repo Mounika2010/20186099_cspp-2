@@ -4,7 +4,9 @@ Insufficient funds
 2000.0
 Thank you
 Your Output: 
-Thank you
+Exception in thread "main" java.lang.NullPointerException
+	at User.addWallet(Solution.java:27)
+	at Solution.main(Solution.java:90)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -13,7 +15,9 @@ Negative amount
 1000.0
 Thank you
 Your Output: 
-Thank you
+Exception in thread "main" java.lang.NullPointerException
+	at User.addWallet(Solution.java:27)
+	at Solution.main(Solution.java:90)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -22,7 +26,9 @@ Expected Output:
 19000.0
 Thank you
 Your Output: 
-Thank you
+Exception in thread "main" java.lang.NullPointerException
+	at User.addWallet(Solution.java:27)
+	at Solution.main(Solution.java:90)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -32,7 +38,9 @@ Expected Output:
 Insufficient funds
 Thank you
 Your Output: 
-Thank you
+Exception in thread "main" java.lang.NullPointerException
+	at User.addWallet(Solution.java:27)
+	at Solution.main(Solution.java:90)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -43,5 +51,7 @@ Expected Output:
 21000.0
 Thank you
 Your Output: 
-Thank you
+Exception in thread "main" java.lang.NullPointerException
+	at User.addWallet(Solution.java:27)
+	at Solution.main(Solution.java:90)
 ----------------------------------------

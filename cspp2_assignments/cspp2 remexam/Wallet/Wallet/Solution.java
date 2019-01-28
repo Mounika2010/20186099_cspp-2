@@ -3,13 +3,12 @@ import java.util.Scanner;
 
 class User {
 	String name;
-	Wallet[] walletarray;
-	int size;
+	int walletarray;
+	int count;
+	String[] personName;
 
-
-	public User(int size) {
-		size = 0;
-		walletarray = new Wallet[size];
+	public User(int wallets) {
+		this.walletarray = wallets;
 		
 	}
 
@@ -24,64 +23,53 @@ class User {
 
 
 	
-	public int addWallet(String name) {
-		for (int i = 0; i < walletarray.length; i++) {
-			if (walletarray.length == 0) {
-				walletarray[i] = new Wallet();
-				size++;
-				return i;
-			}
-		}
-		return -1;
+	public void addWallet(String name) {
+		personName[count++] = name;
 	}
 }
 
 class Wallet {
-	String nameofperson;
-	double amount;
+	User nameofperson;
+	double amount = 1000.0;
 
-
-	Wallet() {
-		amount = 1000.0;
+	public Wallet() {
+		this.amount = 0;
 	}
 
-	public void credit(double amount) {
-		if (amount < 1000.0) {
+	public Wallet(User nameofperson, int amt) {
+		this.amount = amt;
+		this.nameofperson= nameofperson;
+	}
+
+
+	public void credit(int amt) {
+		
+		amount = 1000.0;
+		amount = amount + amt;
+
+	}
+
+	public void debit(String name, int rupees) {
+		if (rupees < amount) {
 			System.out.println("Insufficient funds");
 		}
 
-		if (amount < 0.0) {
+		if (rupees < 0.0) {
 			System.out.println("Negative amount");
 		}
-
-		// if (amount == 0.0) {
-		// 	name 
-		// }
-
-
-
-
-
-	}
-
-	public void debit(double amount) {
-		if (amount != 0.0){
-			amount = 0.0;
-
+		else {
+			amount = amount - rupees;
 		}
-
+		
 	}
 
 	public double availBalance(double amount) {
-		if (amount != 0.0) {
-			return amount;
-		}
-		return 0;
+		return amount;
 	}
 
-	public void transfer() {
+// 	public void transfer() {
 
-	}
+// 	}
 }
 
 
