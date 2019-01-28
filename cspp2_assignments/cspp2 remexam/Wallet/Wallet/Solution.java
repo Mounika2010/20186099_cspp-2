@@ -45,10 +45,15 @@ class Wallet {
 		amount = 1000.0;
 	}
 
-	public void credit() {
+	public void credit(double amount) {
 		if (amount < 1000.0) {
 			System.out.println("Insufficient funds");
 		}
+
+		if (amount < 0.0) {
+			System.out.println("Negative amount");
+		}
+
 	}
 
 	public void debit() {
