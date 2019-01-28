@@ -47,7 +47,7 @@ class Wallet {
 
 	public void credit() {
 		if (amount == 0.0) {
-
+			System.out.println("Insufficient funds");
 		}
 	}
 
