@@ -54,13 +54,28 @@ class Wallet {
 			System.out.println("Negative amount");
 		}
 
+		// if (amount == 0.0) {
+		// 	name 
+		// }
+
+
+
+
+
 	}
 
-	public void debit() {
+	public void debit(double amount) {
+		if (amount != 0.0){
+			amount = 0.0;
+
+		}
 
 	}
 
-	public int availBalance() {
+	public double availBalance(double amount) {
+		if (amount != 0.0) {
+			return amount;
+		}
 		return 0;
 	}
 
