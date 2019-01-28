@@ -1,0 +1,47 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+Insufficient funds
+2000.0
+Thank you
+Your Output: 
+Thank you
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+Negative amount
+Negative amount
+1000.0
+Thank you
+Your Output: 
+Thank you
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+6000.0
+21000.0
+19000.0
+Thank you
+Your Output: 
+Thank you
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+0.0
+0.0
+0.0
+Insufficient funds
+Thank you
+Your Output: 
+Thank you
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+3000.0
+26000.0
+23000.0
+6000.0
+21000.0
+Thank you
+Your Output: 
+Thank you
+----------------------------------------

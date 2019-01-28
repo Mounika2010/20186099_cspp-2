@@ -1,0 +1,20 @@
+sudheer
+3
+A
+B
+C
+debit
+A 1000
+debit
+B 1000
+debit
+C 1000
+balance
+A
+balance
+B
+balance
+C
+transfer
+A C 20000
+quit

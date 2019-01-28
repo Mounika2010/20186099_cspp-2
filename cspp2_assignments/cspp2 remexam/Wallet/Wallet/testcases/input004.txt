@@ -1,0 +1,25 @@
+rehana
+3
+A
+B
+C
+credit
+A 2000
+balance
+A
+credit
+B 25000
+balance
+B
+transfer
+B A 20000
+balance
+A
+balance
+B
+debit
+A 2000
+balance
+A
+quit
+

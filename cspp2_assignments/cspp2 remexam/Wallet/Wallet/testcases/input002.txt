@@ -1,0 +1,17 @@
+lakshmi
+2
+A
+B
+credit
+A 25000
+transfer
+A B 20000
+balance
+A
+balance
+B
+debit
+B 2000
+balance
+B
+quit
