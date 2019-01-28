@@ -42,7 +42,7 @@ class Wallet {
 	}
 
 
-	public void credit(int amt) {
+	public void credit(User name,int amt) {
 		
 		amount = 1000.0;
 		amount = amount + amt;
@@ -92,6 +92,7 @@ public class Solution {
 		}
 		c = 0;
 		int flag = 0;
+		Wallet w = new Wallet();
 		while (s.hasNext()) {
 			String operation = s.nextLine();
 			if (operation.equals("quit")) {
@@ -101,7 +102,7 @@ public class Solution {
 			switch (operation) {
 				//Please complete the code for credit,debit,transfer and balance operations 
 			case "credit":
-				
+						
 				break;
 			case "transfer":
 				
