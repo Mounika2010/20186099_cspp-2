@@ -18,6 +18,9 @@ class Sample{
 		while(scan.hasNextLine()){
 			String type =  scan.nextLine();
 			switch(type){
+				case "quit":
+					System.out.println("Thank you");
+					break;
 				case "debit":
 					String[] line = scan.nextLine().split(" ");
 					Wallet temp=new Wallet();
