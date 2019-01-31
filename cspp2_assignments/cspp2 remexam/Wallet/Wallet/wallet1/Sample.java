@@ -78,20 +78,21 @@ class Sample{
 							if(user.wallets[i].amount < transAmount){
 							System.out.println("Insufficient funds");
 							break;
+							}
+							user.wallets[i].amount = user.wallets[i].amount - transAmount;
 						}
-						user.wallets[i].amount = user.wallets[i].amount - transAmount;
-						}
-						}
-					}
+					
+				
 						
-							
-						//	user.wallets[i].amount = user.wallets[i].amount + transAmount;
-							break;
-						// }
+						if(user.wallets[i].name.equals(token[1])) {	
+							user.wallets[i].amount = user.wallets[i].amount + transAmount;
+						}
+					}	
 				}
 			}
 
 		}
+	}
 
 class User{
 	String name;
