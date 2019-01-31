@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Insufficient funds
 2000.0
@@ -6,7 +6,8 @@ Thank you
 Your Output: 
 Insufficient funds
 2000.0
-Thank you
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Sample.main(Sample.java:75)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -18,7 +19,8 @@ Your Output:
 Nagative amount
 Nagative amount
 1000.0
-Thank you
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Sample.main(Sample.java:75)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -27,11 +29,9 @@ Expected Output:
 19000.0
 Thank you
 Your Output: 
-26000.0
-1000.0
-Insufficient funds
-1000.0
-Thank you
+6000.0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Sample.main(Sample.java:75)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -42,9 +42,8 @@ Insufficient funds
 Thank you
 Your Output: 
 1000.0
-1000.0
-1000.0
-Thank you
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Sample.main(Sample.java:75)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -56,10 +55,6 @@ Expected Output:
 Thank you
 Your Output: 
 3000.0
-26000.0
-3000.0
-26000.0
-Insufficient funds
-1000.0
-Thank you
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Sample.main(Sample.java:75)
 ----------------------------------------
