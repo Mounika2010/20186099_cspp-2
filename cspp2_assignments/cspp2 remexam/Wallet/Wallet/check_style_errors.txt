@@ -54,7 +54,7 @@ Starting audit...
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:115:50: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:119: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:125: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:125:35: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:125:35: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:126: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:144: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\WalletTester.java:145: Line is longer than 80 characters (found 85). [LineLength]
