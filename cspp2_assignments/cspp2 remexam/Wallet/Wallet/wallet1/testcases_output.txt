@@ -16,7 +16,7 @@ Negative amount
 Thank you
 Your Output: 
 Nagative amount
-Nagative amount
+Negative amount
 1000.0
 Thank you
 ----------------------------------------

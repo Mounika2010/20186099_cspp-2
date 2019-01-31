@@ -55,7 +55,7 @@ class Sample{
 						temp1.amount = temp1.amount + amt;
 					}
 					if(amt<0){
-						System.out.println("Nagative amount");
+						System.out.println("Negative amount");
 					}
 					break;
 				case "balance":
