@@ -1,0 +1,10 @@
+rakesh
+1
+A
+debit
+A 2000
+credit
+A 1000
+balance
+A
+quit
