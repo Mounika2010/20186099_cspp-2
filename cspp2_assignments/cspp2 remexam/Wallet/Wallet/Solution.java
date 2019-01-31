@@ -5,7 +5,7 @@ class User {
 	String name;
 	int walletarray;
 	int count;
-	String[] personName;
+	String[] walletName;
 
 	public User(int wallets) {
 		this.walletarray = wallets;
@@ -66,7 +66,7 @@ class Wallet {
 	public double availBalance(double amount) {
 		return amount;
 	}
-
+    
 // 	public void transfer() {
 
 // 	}
