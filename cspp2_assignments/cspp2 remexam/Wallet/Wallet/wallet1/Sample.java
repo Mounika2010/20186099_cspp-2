@@ -38,7 +38,7 @@ class Sample{
 						System.out.println("Insufficient funds");
 					}
 					if(amount<0){
-						System.out.println("Nagative amount");
+						System.out.println("Negative amount");
 					}
 					break;
 				case "credit":

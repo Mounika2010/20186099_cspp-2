@@ -8,14 +8,14 @@ Insufficient funds
 2000.0
 Thank you
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Negative amount
 Negative amount
 1000.0
 Thank you
 Your Output: 
-Nagative amount
+Negative amount
 Negative amount
 1000.0
 Thank you
