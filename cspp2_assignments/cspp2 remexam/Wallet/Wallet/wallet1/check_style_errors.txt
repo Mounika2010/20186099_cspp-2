@@ -74,7 +74,10 @@ Starting audit...
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:67: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:72: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:75: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:76:53: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:77: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:77:51: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:77:89: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:78: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:80: Line is longer than 80 characters (found 92). [LineLength]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:81: Line is longer than 80 characters (found 82). [LineLength]
@@ -111,4 +114,4 @@ Starting audit...
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:123:26: Parameter k should be final. [FinalParameters]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\Wallet\Wallet\wallet1\Sample.java:123:34: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 111 errors.
+Checkstyle ends with 114 errors.
