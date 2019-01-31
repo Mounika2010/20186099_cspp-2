@@ -88,6 +88,7 @@ class Sample{
 							user.wallets[i].amount = user.wallets[i].amount + transAmount;
 						}
 					}	
+					break;
 				}
 			}
 
