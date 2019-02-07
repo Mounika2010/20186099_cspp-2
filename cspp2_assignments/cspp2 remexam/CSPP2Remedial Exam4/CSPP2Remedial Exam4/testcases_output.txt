@@ -2,23 +2,20 @@
 Expected Output: 
 Alice
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Game.getplayer(Solution.java:63)
-	at Solution.main(Solution.java:29)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:35)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 Mark
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Game.getplayer(Solution.java:63)
-	at Solution.main(Solution.java:29)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:35)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 Bob
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Game.getplayer(Solution.java:63)
-	at Solution.main(Solution.java:29)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:35)
 ----------------------------------------

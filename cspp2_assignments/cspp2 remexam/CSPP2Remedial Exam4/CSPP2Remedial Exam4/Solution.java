@@ -25,12 +25,14 @@ public class Solution {
 				else {
 					totalScore = 0;
 				}
-				
-				game.getplayer(index).getscoree(totalScore);
 
+				if (score == 6) {
+					totalScore = totalScore + score;
+				}
+				
 			}
 		}
-		game.winner();
+		System.out.println(game.winner().getName());
 	}
 }
 
@@ -45,10 +47,6 @@ class Game {
 		size = 0;
 	}
 
-	Game() {
-		players = new Player[numplayers];
-		size = 0;
-	}
 
 	public void addPlayer(Player playerName) {
 		for (int i = 0; i < players.length; i++) {
@@ -69,17 +67,17 @@ class Game {
 				return i;
 			}
 		}
-		return -1;
+		return 1;
 	}
 
-	public void winner() {
+	public Player winner() {
 		// System.out.println(totalScore);
 		for (int i = 0; i < players.length; i++) {
 			if (players[i].getmaxscore() >= 100) {
 				System.out.println(players[i].getName());
 			}
 		}
-		// return null;
+		return null;
 
 	}
 	
