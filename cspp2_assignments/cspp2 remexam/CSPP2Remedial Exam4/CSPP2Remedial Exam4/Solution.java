@@ -21,15 +21,14 @@ public class Solution {
 				if (score == 1) {
 					totalScore = 0;
 				}
-				else if (score == 6 && score != 1) {
+
+				else if (score != 1 && score == 6) {
 					totalScore = totalScore + score;
 				}
-
 			}
 		}
-		if (totalScore >= 100) {
-			System.out.println(game.winner().getName());
-		}
+
+		System.out.println(game.winner().getName());
 	}
 }
 
@@ -61,10 +60,23 @@ class Game {
 	}
 
 	public Player winner() {
-		
 	
+		
 		return null;
 
+	}
+
+	public int gettotalScore(int point) {
+		int points = 0;
+		for (int i = 0; i < players.length; i++) {
+			if (point == 6 && point != 1) {
+				points = points + point;
+			}
+			if (points >= 100) {
+				System.out.println(players[i]);
+			}
+		}
+		return points;
 	}
 
 	

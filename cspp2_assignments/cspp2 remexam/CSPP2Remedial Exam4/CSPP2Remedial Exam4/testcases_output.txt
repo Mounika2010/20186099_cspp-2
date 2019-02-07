@@ -2,17 +2,20 @@
 Expected Output: 
 Alice
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 Mark
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 Bob
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:31)
 ----------------------------------------
