@@ -26,12 +26,11 @@ public class Solution {
 					totalScore = 0;
 				}
 				
+				game.getplayer(index).getscoree(totalScore);
 
 			}
 		}
-
-		String temp = game.winner(totalScore) + "";
-		System.out.println(temp);
+		game.winner();
 	}
 }
 
@@ -67,14 +66,14 @@ class Game {
 		return -1;
 	}
 
-	public Player winner(int totalScore) {
-		System.out.println(totalScore);
+	public void winner() {
+		// System.out.println(totalScore);
 		for (int i = 0; i < players.length; i++) {
-			if (totalScore == 100) {
-				return players[i];
+			if (players[i].getmaxscore() >= 100) {
+				System.out.println(players[i].getName());
 			}
 		}
-		return null;
+		// return null;
 
 	}
 
@@ -96,5 +95,9 @@ class Player {
 	}
 	public int getmaxscore() {
 		return this.score;
+	}
+
+	public void getscoree(int score) {
+		this.score = this.score + score;
 	}
 }
