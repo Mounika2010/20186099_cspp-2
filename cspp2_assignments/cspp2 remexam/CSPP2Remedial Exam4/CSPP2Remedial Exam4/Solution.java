@@ -18,17 +18,19 @@ public class Solution {
 				int index = game.indexOf(player);
 				int score = Integer.parseInt(lines[1]);
 				//Please complete the code to complete the game.
-				if (score == 1) {
-					totalScore = 0;
-				}
-
-				else if (score != 1 && score == 6) {
+				
+				if (score != 1) {
 					totalScore = totalScore + score;
 				}
+				else {
+					totalScore = 0;
+				}
+				game.getplayer(index).gettotalScore(totalScore);
+
 			}
 		}
 
-		System.out.println(game.winner().getName());
+		game.winner();
 	}
 }
 
@@ -46,8 +48,13 @@ class Game {
 		for (int i = 0; i < players.length; i++) {
 			if (players[i] == null) {
 				players[i] = playerName;
+				size++;
 			}
 		}
+	}
+
+	public Player getplayer(int p) {
+		return players[p];
 	}
 
 	public int indexOf(String player) {
@@ -59,24 +66,15 @@ class Game {
 		return -1;
 	}
 
-	public Player winner() {
-	
-		
-		return null;
-
-	}
-
-	public int gettotalScore(int point) {
-		int points = 0;
+	public void winner() {
 		for (int i = 0; i < players.length; i++) {
-			if (point == 6 && point != 1) {
-				points = points + point;
-			}
-			if (points >= 100) {
-				System.out.println(players[i]);
+
+
+			if (players[i].getmaxscore() >= 100) {
+				System.out.println(players[i].getName());
 			}
 		}
-		return points;
+
 	}
 
 	
@@ -85,12 +83,25 @@ class Game {
 
 class Player {
 	String nameofPlayer;
+	int score;
 
 	Player(String playernamee) {
 		this.nameofPlayer = playernamee;
+		this.score = score;
 	}
 
 	public String getName() {
 		return nameofPlayer;
+	}
+
+
+
+	public int getmaxscore() {
+		return this.score;
+	}
+
+	public int gettotalScore(int point) {
+		return this.score + point;
+
 	}
 }
