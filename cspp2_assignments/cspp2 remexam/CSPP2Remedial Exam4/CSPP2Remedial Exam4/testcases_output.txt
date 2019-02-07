@@ -1,0 +1,18 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+Alice
+Your Output: 
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+Mark
+Your Output: 
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+Bob
+Your Output: 
+
+----------------------------------------
