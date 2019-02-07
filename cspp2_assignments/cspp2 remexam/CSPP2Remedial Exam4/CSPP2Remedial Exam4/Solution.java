@@ -32,7 +32,7 @@ public class Solution {
 				
 			}
 		}
-		System.out.println(game.winner().getName());
+		System.out.println(game.winner(totalScore).getName());
 	}
 }
 
@@ -70,11 +70,12 @@ class Game {
 		return 1;
 	}
 
-	public Player winner() {
+	public Player winner(int totalScore) {
 		// System.out.println(totalScore);
 		for (int i = 0; i < players.length; i++) {
 			if (players[i].getmaxscore() >= 100) {
 				System.out.println(players[i].getName());
+				return players[i];
 			}
 		}
 		return null;
