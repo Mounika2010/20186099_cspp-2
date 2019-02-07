@@ -70,7 +70,7 @@ class Game {
 	public Player winner(int totalScore) {
 		System.out.println(totalScore);
 		for (int i = 0; i < players.length; i++) {
-			if (players[i].getmaxscore() >= 100) {
+			if (totalScore == 100) {
 				return players[i];
 			}
 		}

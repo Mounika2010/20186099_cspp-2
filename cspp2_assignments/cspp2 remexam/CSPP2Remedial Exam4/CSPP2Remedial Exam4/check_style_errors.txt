@@ -29,7 +29,7 @@ Starting audit...
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:61:28: Parameter player should be final. [FinalParameters]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:70:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:70:30: Parameter totalScore should be final. [FinalParameters]
-[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:73:57: '100' is a magic number. [MagicNumber]
+[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:73:43: '100' is a magic number. [MagicNumber]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:81: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:85: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:86:9: Missing a Javadoc comment. [JavadocVariable]
