@@ -36,12 +36,13 @@ public class Solution {
 
 class Game {
 	int numplayers;
-	int size = 2;
+	int size = 0;
 	Player[] players;
 
 	Game(int numplayers) {
 		this.numplayers = numplayers;
-		players = new Player[6];
+		players = new Player[numplayers];
+		size = 0;
 	}
 
 	public void addPlayer(Player playerName) {
@@ -76,7 +77,6 @@ class Game {
 		// return null;
 
 	}
-
 	
 }
 
