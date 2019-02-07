@@ -45,6 +45,11 @@ class Game {
 		size = 0;
 	}
 
+	Game() {
+		players = new Player[numplayers];
+		size = 0;
+	}
+
 	public void addPlayer(Player playerName) {
 		for (int i = 0; i < players.length; i++) {
 			if (players[i] == null) {
