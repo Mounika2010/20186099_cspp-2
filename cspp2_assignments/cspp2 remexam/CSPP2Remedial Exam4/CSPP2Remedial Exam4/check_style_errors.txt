@@ -18,9 +18,7 @@ Starting audit...
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:15:71: '+=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:16:43: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:16:44: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:17: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:17:54: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:17:55: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:17: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:18:33: '}' at column 5 should be alone on a line. [RightCurly]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:18:34: '}' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:18:36: '=' is not preceded with whitespace. [WhitespaceAround]
@@ -93,4 +91,4 @@ Starting audit...
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:110:31: Parameter score should be final. [FinalParameters]
 [ERROR] D:\20186099_cspp-2\cspp2_assignments\cspp2 remexam\CSPP2Remedial Exam4\CSPP2Remedial Exam4\Solution.java:110:35: 'score' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 93 errors.
+Checkstyle ends with 91 errors.

@@ -14,7 +14,7 @@ public class Solution {
 				if(totalScore!=0){
 				game.players[game.indexOf(yy)].score+=totalScore;
 				totalScore=0;
-				System.out.println(yy+game.players[game.indexOf(yy)].score);
+				//System.out.println(yy+game.players[game.indexOf(yy)].score);
 				}yy=lines[0];
 				if (game.indexOf(lines[0]) == -1) {
 					game.addPlayer(new Player(lines[0]));
@@ -80,7 +80,7 @@ class Game {
 		for (int i = 0; i < this.players.length; i++) {
 			if(this.players[i]!=null){
 			if (this.players[i].getmaxscore() >= 100) {
-				System.out.println(players[i].getName());
+				//System.out.println(players[i].getName());
 				return this.players[i];
 			}}
 		}
