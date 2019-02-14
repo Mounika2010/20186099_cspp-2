@@ -11,16 +11,13 @@ public class Solution {
 		while (scan.hasNextLine()) {
 			String lines[] = scan.nextLine().split(" got ");
 			if (lines.length == 1) {
-				if(totalScore!=0){
-				game.players[game.indexOf(yy)].score+=totalScore;
-				totalScore=0;
-				//System.out.println(yy+game.players[game.indexOf(yy)].score);
+			//System.out.println(yy+game.players[game.indexOf(yy)].score);
 				}yy=lines[0];
 				if (game.indexOf(lines[0]) == -1) {
 					game.addPlayer(new Player(lines[0]));
 					
 				}
-			}  else if (lines.length == 2) {
+			 else if (lines.length == 2) {
 				String player = lines[0];
 				int index = game.indexOf(player);
 				int score = Integer.parseInt(lines[1]);
@@ -34,8 +31,7 @@ public class Solution {
 					totalScore =0;
 					
 				}
-				
-				
+								
 			}
 			
 			if(game.winner(2)!=null)break;
@@ -49,11 +45,15 @@ class Game {
 	int numplayers;
 	int size;
 	Player[] players;
+	int curr;
+	int turnscore;
+
 
 	Game(int numplayers) {
 		this.numplayers = numplayers;
 		players = new Player[numplayers];
 		size = 0;
+		curr=0; 
 	}
 
 
@@ -66,14 +66,24 @@ class Game {
 
 
 	public int indexOf(String player) {
+		// prsc();
 		for (int i = 0; i < players.length; i++) {
 			if(players[i]!=null){
 			if (players[i].getName().equals(player)) {
+				this.curr=i;
 				return i;
 			}}
 		}
 		return -1;
 	}
+
+	// public void prsc(int totalScore, String player) {
+
+	// 	if (this.curr != player) {
+	// 		players[game.indexOf(player)].score += totalScore;
+	// 	}
+	// }
+
 
 	public Player winner(int totalScore) {
 		// System.out.println(totalScore);

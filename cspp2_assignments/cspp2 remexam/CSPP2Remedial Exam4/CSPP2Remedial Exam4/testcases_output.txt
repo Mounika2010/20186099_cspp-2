@@ -1,20 +1,21 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Alice
 Your Output: 
-Alice
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:40)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 Mark
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:44)
+	at Solution.main(Solution.java:40)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 Bob
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:44)
+	at Solution.main(Solution.java:40)
 ----------------------------------------
