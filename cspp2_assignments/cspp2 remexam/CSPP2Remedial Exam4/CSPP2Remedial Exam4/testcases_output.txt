@@ -3,19 +3,22 @@ Expected Output:
 Alice
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:40)
+	at Game.winner(Solution.java:92)
+	at Solution.main(Solution.java:37)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 Mark
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:40)
+	at Game.winner(Solution.java:92)
+	at Solution.main(Solution.java:37)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 Bob
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:40)
+	at Game.winner(Solution.java:92)
+	at Solution.main(Solution.java:37)
 ----------------------------------------

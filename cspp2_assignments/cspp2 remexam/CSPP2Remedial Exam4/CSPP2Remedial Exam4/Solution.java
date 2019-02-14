@@ -88,11 +88,11 @@ class Game {
 	public Player winner(int totalScore) {
 		// System.out.println(totalScore);
 		for (int i = 0; i < this.players.length; i++) {
-			if(this.players[i]!=null){
+			// if(this.players[i]!=null){
 			if (this.players[i].getmaxscore() >= 100) {
 				//System.out.println(players[i].getName());
 				return this.players[i];
-			}}
+			}
 		}
 		return null;
 
