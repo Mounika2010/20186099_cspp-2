@@ -7,38 +7,47 @@ public class Solution {
 		Game game = new Game(count);
 		game.addPlayer(new Player(scan.nextLine()));
 		int totalScore = 0;
+		String yy=game.players[0].nameofPlayer;
 		while (scan.hasNextLine()) {
 			String lines[] = scan.nextLine().split(" got ");
 			if (lines.length == 1) {
+				if(totalScore!=0){
+				game.players[game.indexOf(yy)].score+=totalScore;
+				totalScore=0;
+				System.out.println(yy+game.players[game.indexOf(yy)].score);
+				}yy=lines[0];
 				if (game.indexOf(lines[0]) == -1) {
 					game.addPlayer(new Player(lines[0]));
+					
 				}
 			}  else if (lines.length == 2) {
 				String player = lines[0];
 				int index = game.indexOf(player);
 				int score = Integer.parseInt(lines[1]);
 				//Please complete the code to complete the game.
-				
+				int y=game.indexOf(lines[0]);
 				if (score != 1) {
 					totalScore = totalScore + score;
+					
 				}
-				else {
-					totalScore = 0;
-				}
-
-				if (score == 6) {
-					totalScore = totalScore + score;
+				else if (score==1){
+					totalScore =0;
+					
 				}
 				
+				
 			}
+			
+			if(game.winner(2)!=null)break;
 		}
+		game.players[game.indexOf(yy)].score+=totalScore;
 		System.out.println(game.winner(totalScore).getName());
 	}
 }
 
 class Game {
 	int numplayers;
-	int size = 0;
+	int size;
 	Player[] players;
 
 	Game(int numplayers) {
@@ -49,34 +58,31 @@ class Game {
 
 
 	public void addPlayer(Player playerName) {
-		for (int i = 0; i < players.length; i++) {
-			if (players[i] == null) {
-				players[i] = playerName;
-				size++;
-			}
-		}
+		//System.out.println(playerName.getName());
+		this.players[this.size++]=playerName;
+		return;
 	}
 
-	public Player getplayer(int p) {
-		return players[p];
-	}
+
 
 	public int indexOf(String player) {
 		for (int i = 0; i < players.length; i++) {
+			if(players[i]!=null){
 			if (players[i].getName().equals(player)) {
 				return i;
-			}
+			}}
 		}
-		return 1;
+		return -1;
 	}
 
 	public Player winner(int totalScore) {
 		// System.out.println(totalScore);
-		for (int i = 0; i < players.length; i++) {
-			if (players[i].getmaxscore() >= 100) {
+		for (int i = 0; i < this.players.length; i++) {
+			if(this.players[i]!=null){
+			if (this.players[i].getmaxscore() >= 100) {
 				System.out.println(players[i].getName());
-				return players[i];
-			}
+				return this.players[i];
+			}}
 		}
 		return null;
 

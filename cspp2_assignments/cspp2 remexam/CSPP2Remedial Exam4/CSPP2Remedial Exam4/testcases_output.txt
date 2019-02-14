@@ -2,20 +2,39 @@
 Expected Output: 
 Alice
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:35)
+Alice18
+Alice27
+Alice33
+Alice50
+Bob11
+Alice56
+Bob25
+Alice74
+Alice
+Alice
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 Mark
 Your Output: 
+Alice18
+Alice27
+Alice33
+Bob11
+Alice39
+Bob25
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:44)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 Bob
 Your Output: 
+Olive18
+Alice9
+Alice15
+Mark19
+Alice32
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:44)
 ----------------------------------------
