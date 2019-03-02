@@ -82,14 +82,16 @@ class ShoppingCart {
 		return total;
 	}
 
-	public double getPrice(Item item) {
-		for (int i = 0; i < catalogue.length; i++) {
-			if (catalogue[i].equals(item)) {
-				return catalogue[i].price;
-			}
-		}
-		return 0.0;
-	}
+	public double getPrice(Item given) {
+        for (Item i : catalogue) {
+            if (i != null) {
+                if (i.equals(given)) {
+                    return i.price;
+                }
+            }
+        }
+        return 0.0;
+    }
 
 	public void removeFromCart(Item itemToremove){
 		for (int i = 0; i < cart.length; i++) {
