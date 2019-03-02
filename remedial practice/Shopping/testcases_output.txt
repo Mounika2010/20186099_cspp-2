@@ -28,9 +28,15 @@ Eggs,65,5.0
 rice5kg,109,300.0
 curd,22,30.0
 cofee,81,300.0
-Exception in thread "main" java.lang.NullPointerException
-	at ShoppingCart.getTotalAmount(Item.java:80)
-	at Solution.main(Solution.java:37)
+totalAmount: 0.0
+totalAmount: 0.0
+totalAmount: 0.0
+Payable amount: 0.0
+Name   quantity   Price
+Total:0.0
+Disc%:0.0
+Tax:0.0
+Payable Amount:0.0
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -67,9 +73,15 @@ peas,47,40.0
 milk,31,28.0
 rice5kg,108,300.0
 cup,143,400.0
-Exception in thread "main" java.lang.NullPointerException
-	at ShoppingCart.getTotalAmount(Item.java:80)
-	at Solution.main(Solution.java:37)
+totalAmount: 0.0
+Payable amount: 0.0
+totalAmount: 0.0
+Payable amount: 0.0
+Name   quantity   Price
+Total:0.0
+Disc%:0.0
+Tax:0.0
+Payable Amount:0.0
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -108,9 +120,15 @@ cofee,146,30.0
 ghee,46,520.0
 honey,79,280.0
 milk,30,30.0
-Exception in thread "main" java.lang.NullPointerException
-	at ShoppingCart.getTotalAmount(Item.java:80)
-	at Solution.main(Solution.java:37)
+totalAmount: 0.0
+totalAmount: 0.0
+totalAmount: 0.0
+Payable amount: 0.0
+Name   quantity   Price
+Total:0.0
+Disc%:0.0
+Tax:0.0
+Payable Amount:0.0
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -160,7 +178,13 @@ chicken,147,180.0
 ghee,194,520.0
 rice5kg,169,300.0
 milk,33,28.0
-Exception in thread "main" java.lang.NullPointerException
-	at ShoppingCart.getTotalAmount(Item.java:80)
-	at Solution.main(Solution.java:37)
+totalAmount: 0.0
+Payable amount: 0.0
+Invalid coupon
+Payable amount: 0.0
+Name   quantity   Price
+Total:0.0
+Disc%:0.0
+Tax:0.0
+Payable Amount:0.0
 ----------------------------------------
